@@ -1,6 +1,7 @@
 import os
 import json
 import click
+from collections import OrderedDict
 
 current_directory = os.path.realpath(os.path.dirname(__file__))
 
@@ -14,6 +15,10 @@ def cli():
 @cli.command()
 def generate_headers():
 
+    modules = []
+
+    exports = get_exports()
+
     path_to_folder = os.path.abspath(os.path.join(current_directory, "./../../OpenDSSDirect.make/_source/electricdss/DDLL/"))
 
     files = []
@@ -21,6 +26,7 @@ def generate_headers():
         if file.endswith(".pas"):
             files.append(file)
 
+    current_function = None
     func_sigs = []
     for filename in files:
         with open(os.path.join(path_to_folder, filename)) as f:
@@ -34,15 +40,32 @@ def generate_headers():
                 if read_lines is True and "cdecl" in l:
                     l = l.replace("Function", "function").replace("procedure", "function").replace("Procedure", "function").replace("  ", " ")
                     l = l.split("//")[0].strip()
+                    if current_function is not None:
+                        modules.append(current_function)
+                    subfunctions = []
+                    has_mode = "mode" in l
+                    function_definition = line_to_function_definition(l, exports)
+                    function_definition["functions"] = subfunctions
+                    current_function = function_definition
                     func_sigs.append(l)
+                if ":" in l and "//" in l and "begin" in l and l.split("begin")[0].strip().endswith(":"):
+                    name = l.split("//")[-1].strip()
+                    name = "".join(x for x in list(OrderedDict.fromkeys(name.split())) if x != "")
+                    name = name.replace("-", "").replace("read", "Read").replace("write", "Write")
+                    subfunctions.append({
+                        "name": name,
+                        "mode": int(l.strip().split(":")[0])
+                    })
+                    assert has_mode is True
 
     func_sigs = sorted(func_sigs)
     with open(os.path.abspath(os.path.join(current_directory, "./../opendssdirect.pas")), "w") as f:
         f.write("\n".join(func_sigs))
 
+    with open(os.path.join(current_directory, "../opendssdirect.json"), "w") as f:
+        f.write(json.dumps(modules, indent=4, separators={",": "", ":": ""}))
 
-@cli.command()
-def parse_headers():
+def get_exports():
     for root, _, files in os.walk(os.path.join(current_directory, "../../OpenDSSDirect.make/_source/electricdss/DDLL/")):
         for filename in files:
             if filename.endswith(".lpr"):
@@ -56,55 +79,50 @@ def parse_headers():
     exports = "\n".join([l.strip() for l in exports.splitlines() if not l.strip().startswith("//")])
 
     exports = [e.strip().lower() for e in exports.replace("\n", "").split(",")]
+    return exports
 
-    with open(os.path.join(current_directory, "../opendssdirect.pas")) as f:
-        data = f.read()
 
-    opendss_functions = []
-    for l in data.splitlines():
+def line_to_function_definition(l, exports):
+    function_name = l.split("(")[0].strip("function ").replace("cdecl", "").replace(";", "").strip()
 
-        # get function name
-        function_name = l.split("(")[0].strip("function ").replace("cdecl", "").replace(";", "").strip()
+    if function_name.lower() in exports:
+        export_status = True
+    else:
+        export_status = False
 
-        if function_name.lower() in exports:
-            export_status = True
+    # get output type
+    if "(" not in l and ")" not in l:
+        output_type = "void"
+    else:
+        output_type = l.split(")")[-1]
+        if output_type.startswith(":"):
+            output_type = output_type.split(";")[0].split(":")[-1].strip()
         else:
-            export_status = False
-
-        # get output type
-        if "(" not in l and ")" not in l:
             output_type = "void"
-        else:
-            output_type = l.split(")")[-1]
-            if output_type.startswith(":"):
-                output_type = output_type.split(";")[0].split(":")[-1].strip()
-            else:
-                output_type = "void"
 
-        # get input arguments
-        if "(" not in l and ")" not in l or l.split("(")[1].split(")")[0].strip() == "":
-            input_arguments = {"number": 0, "type": []}
-        else:
-            arguments = []
-            input_arguments = l.split("(")[1].split(")")[0]
-            for arg in input_arguments.split(";"):
-                # only a single argument
-                arg_names, arg_type = arg.split(":")
-                for arg_name in arg_names.split(","):
-                    d = {"name": arg_name.strip().replace("var ", "").replace("Var ", "").replace("out ", "").strip(), "type": arg_type.strip()}
-                    arguments.append(d)
+    # get input arguments
+    if "(" not in l and ")" not in l or l.split("(")[1].split(")")[0].strip() == "":
+        input_arguments = {"number": 0, "type": []}
+        arguments = []
+    else:
+        arguments = []
+        input_arguments = l.split("(")[1].split(")")[0]
+        for arg in input_arguments.split(";"):
+            # only a single argument
+            arg_names, arg_type = arg.split(":")
+            for arg_name in arg_names.split(","):
+                d = {"name": arg_name.strip().replace("var ", "").replace("Var ", "").replace("out ", "").strip(), "type": arg_type.strip()}
+                arguments.append(d)
 
-        function_definition = {
-            "name": function_name,
-            "output": {"type": output_type},
-            "input": arguments,
-            "exported": export_status
-        }
+    function_definition = {
+        "name": function_name,
+        "output": {"type": output_type},
+        "input": arguments,
+        "exported": export_status
+    }
 
-        opendss_functions.append(function_definition)
+    return function_definition
 
-    with open(os.path.join(current_directory, "../opendssdirect.json"), "w") as f:
-        f.write(json.dumps(opendss_functions, indent=4, separators={",": "", ":": ""}))
 
 
 @cli.command()
