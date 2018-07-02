@@ -2,7 +2,7 @@ import os
 
 current_directory = os.path.realpath(os.path.dirname(__file__))
 
-def main():
+def generate_headers():
 
     path_to_folder = os.path.abspath(os.path.join(current_directory, "./../../OpenDSSDirect.make/_source/electricdss/DDLL/"))
 
@@ -30,6 +30,10 @@ def main():
     with open(os.path.abspath(os.path.join(current_directory, "./../opendssdirect.pas")), "w") as f:
         f.write("\n".join(func_sigs))
 
+def parse_headers():
+
+    pass
+
 
 if __name__ == "__main__":
-    main()
+    generate_headers()
