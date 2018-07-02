@@ -76,6 +76,28 @@ def parse_headers():
     with open(os.path.join(current_directory, "../opendssdirect.json"), "w") as f:
         f.write(json.dumps(opendss_functions, indent=4, separators={",": "", ":": ""}))
 
+def generate_c_headers():
+
+    with open(os.path.join(current_directory, "../opendssdirect.json")) as f:
+        data = json.loads(f.read())
+
+    c_headers = []
+    for f in data:
+
+        c_header = ""
+        c_header = c_header + f["output"]["type"].upper()
+        c_header = c_header + " " + f["name"] + "("
+        for i, arg in enumerate(f["input"]):
+            c_header = c_header + arg["type"].upper() + " " + arg["name"].lower()
+            if i < len(f["input"]) - 1:
+                c_header = c_header + ", "
+        c_header = c_header + ");"
+
+        c_headers.append(c_header)
+
+    with open(os.path.join(current_directory, "../opendssdirect.h"), "w") as f:
+        f.write("\n".join(c_headers))
+
 
 if __name__ == "__main__":
-    parse_headers()
+    generate_c_headers()
