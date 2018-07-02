@@ -78,6 +78,18 @@ def parse_headers():
 
 def generate_c_headers():
 
+    typedefs = {"DOUBLE": "double",
+     "INTEGER": "int",
+     "LONGINT": "int32_t",
+     "LONGWORD": "uint32_t",
+     "NATIVEUINT": "uint64_t",
+     "PANSICHAR": "char *",
+     "PCOMPLEXARRAY": "void *",
+     "PINTEGERARRAY": "void *",
+     "PNODEVARRAY": "void *",
+     "VARIANT": "void *",
+     "VOID": "void"}
+
     with open(os.path.join(current_directory, "../opendssdirect.json")) as f:
         data = json.loads(f.read())
 
@@ -96,6 +108,13 @@ def generate_c_headers():
         c_headers.append(c_header)
 
     with open(os.path.join(current_directory, "../opendssdirect.h"), "w") as f:
+
+        f.write("""#include "stdint.h"\n""")
+        f.write("\n")
+        for k, v in typedefs.items():
+            f.write("typedef {} {};\n".format(v, k))
+
+        f.write("\n")
         f.write("\n".join(c_headers))
 
 

@@ -1,3 +1,17 @@
+#include "stdint.h"
+
+typedef double DOUBLE;
+typedef int INTEGER;
+typedef int32_t LONGINT;
+typedef uint32_t LONGWORD;
+typedef uint64_t NATIVEUINT;
+typedef char * PANSICHAR;
+typedef void * PCOMPLEXARRAY;
+typedef void * PINTEGERARRAY;
+typedef void * PNODEVARRAY;
+typedef void * VARIANT;
+typedef void VOID;
+
 LONGINT ActiveClassI(LONGINT mode, LONGINT arg);
 PANSICHAR ActiveClassS(LONGINT mode, PANSICHAR arg);
 VOID ActiveClassV(LONGINT mode, VARIANT arg);
