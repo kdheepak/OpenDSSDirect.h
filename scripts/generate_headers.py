@@ -1,9 +1,10 @@
 import os
 
+current_directory = os.path.realpath(os.path.dirname(__file__))
+
 def main():
 
-    pass
-    path_to_folder = os.path.abspath(os.path.join("./../../OpenDSSDirect.make/_source/electricdss/DDLL/"))
+    path_to_folder = os.path.abspath(os.path.join(current_directory, "./../../OpenDSSDirect.make/_source/electricdss/DDLL/"))
 
     files = []
     for file in os.listdir(path_to_folder):
