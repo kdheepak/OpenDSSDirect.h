@@ -1,7 +1,9 @@
 import os
 import json
-import click
 from collections import OrderedDict
+
+import toml
+import click
 
 current_directory = os.path.realpath(os.path.dirname(__file__))
 
@@ -64,6 +66,9 @@ def generate_headers():
 
     with open(os.path.join(current_directory, "../opendssdirect.json"), "w") as f:
         f.write(json.dumps(modules, indent=4, separators={",": "", ":": ""}))
+
+    with open(os.path.join(current_directory, "../opendssdirect.toml"), "w") as f:
+        f.write(toml.dumps({"modules": modules}))
 
 def get_exports():
     for root, _, files in os.walk(os.path.join(current_directory, "../../OpenDSSDirect.make/_source/electricdss/DDLL/")):

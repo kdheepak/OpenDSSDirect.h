@@ -1,0 +1,5703 @@
+[[modules]]
+name = "ActiveClassI"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "ActiveClass.First"
+mode = 0
+
+[[modules.functions]]
+name = "ActiveClass.Next"
+mode = 1
+
+[[modules.functions]]
+name = "ActiveClass.NumElements"
+mode = 2
+
+[[modules.functions]]
+name = "ActiveClass.Count"
+mode = 3
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "ActiveClassS"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "ActiveClass.NameRead"
+mode = 0
+
+[[modules.functions]]
+name = "ActiveClass.NameWrite"
+mode = 1
+
+[[modules.functions]]
+name = "ActiveClass.ActiveClassName"
+mode = 2
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "ActiveClassV"
+exported = true
+functions = []
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "variant"
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "BUSI"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "Bus.NumNodes"
+mode = 0
+
+[[modules.functions]]
+name = "Bus.ZscRefresh"
+mode = 1
+
+[[modules.functions]]
+name = "Bus.Coorddefined"
+mode = 2
+
+[[modules.functions]]
+name = "Bus.GetUniqueNodeNumber"
+mode = 3
+
+[[modules.functions]]
+name = "Bus.N_Customers"
+mode = 4
+
+[[modules.functions]]
+name = "Bus.SectionID"
+mode = 5
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "BUSF"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "double"
+
+[[modules.functions]]
+name = "Bus.kVBase"
+mode = 0
+
+[[modules.functions]]
+name = "Bus.XRead"
+mode = 1
+
+[[modules.functions]]
+name = "Bus.XWrite"
+mode = 2
+
+[[modules.functions]]
+name = "Bus.YRead"
+mode = 3
+
+[[modules.functions]]
+name = "Bus.YWrite"
+mode = 4
+
+[[modules.functions]]
+name = "Bus.Distance"
+mode = 5
+
+[[modules.functions]]
+name = "Bus.Lambda"
+mode = 6
+
+[[modules.functions]]
+name = "Bus.N_interrupts"
+mode = 7
+
+[[modules.functions]]
+name = "Bus.int_duration"
+mode = 8
+
+[[modules.functions]]
+name = "Bus.Cust_interrupts"
+mode = 9
+
+[[modules.functions]]
+name = "Bus.Cust_duration"
+mode = 10
+
+[[modules.functions]]
+name = "Bus.Totalmiles"
+mode = 11
+
+
+[modules.output]
+type = "double"
+[[modules]]
+name = "BUSS"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "Bus.NameRead"
+mode = 0
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "BUSV"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "Variant"
+
+[[modules.functions]]
+name = "Bus.Voltages"
+mode = 0
+
+[[modules.functions]]
+name = "Bus.SeqVoltages"
+mode = 1
+
+[[modules.functions]]
+name = "Bus.Nodes"
+mode = 2
+
+[[modules.functions]]
+name = "Bus.Voc"
+mode = 3
+
+[[modules.functions]]
+name = "Bus.Isc"
+mode = 4
+
+[[modules.functions]]
+name = "Bus.PuVoltages"
+mode = 5
+
+[[modules.functions]]
+name = "Bus.ZscMatrix"
+mode = 6
+
+[[modules.functions]]
+name = "Bus.Zcs1"
+mode = 7
+
+[[modules.functions]]
+name = "Bus.Zsc0"
+mode = 8
+
+[[modules.functions]]
+name = "Bus.YscMatrix"
+mode = 9
+
+[[modules.functions]]
+name = "Bus.CplxSeqVoltages"
+mode = 10
+
+[[modules.functions]]
+name = "Bus.VLL"
+mode = 11
+
+[[modules.functions]]
+name = "Bus.PuVLL"
+mode = 12
+
+[[modules.functions]]
+name = "Bus.VMagAngle"
+mode = 13
+
+[[modules.functions]]
+name = "Bus.PuVMagAngle"
+mode = 14
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "CapacitorsI"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "Capacitors.NumStepsRead"
+mode = 0
+
+[[modules.functions]]
+name = "Capacitors.NumStepsWrite"
+mode = 1
+
+[[modules.functions]]
+name = "Capacitors.IsDeltaRead"
+mode = 2
+
+[[modules.functions]]
+name = "Capacitors.IsDeltaWrite"
+mode = 3
+
+[[modules.functions]]
+name = "Capacitors.First"
+mode = 4
+
+[[modules.functions]]
+name = "Capacitors.Next"
+mode = 5
+
+[[modules.functions]]
+name = "Capacitors.Count"
+mode = 6
+
+[[modules.functions]]
+name = "Capacitors.AddStep"
+mode = 7
+
+[[modules.functions]]
+name = "Capacitors.SubtractStep"
+mode = 8
+
+[[modules.functions]]
+name = "Capacitors.AvailableSteps"
+mode = 9
+
+[[modules.functions]]
+name = "Capacitors.Open"
+mode = 10
+
+[[modules.functions]]
+name = "Capacitors.Close"
+mode = 11
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "CapacitorsF"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "double"
+
+[[modules.functions]]
+name = "Capacitors.kVRead"
+mode = 0
+
+[[modules.functions]]
+name = "Capacitors.kVWrite"
+mode = 1
+
+[[modules.functions]]
+name = "Capacitors.kvarRead"
+mode = 2
+
+[[modules.functions]]
+name = "Capacitors.kvarWrite"
+mode = 3
+
+
+[modules.output]
+type = "double"
+[[modules]]
+name = "CapacitorsS"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "Capacitors.NameRead"
+mode = 0
+
+[[modules.functions]]
+name = "Capacitors.NameWrite"
+mode = 1
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "CapacitorsV"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "variant"
+
+[[modules.functions]]
+name = "Capacitors.AllNames"
+mode = 0
+
+[[modules.functions]]
+name = "Capacitors.StatesRead"
+mode = 1
+
+[[modules.functions]]
+name = "Capacitors.StatesWrite"
+mode = 2
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "CapControlsI"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "CapControls.First"
+mode = 0
+
+[[modules.functions]]
+name = "CapControls.Next"
+mode = 1
+
+[[modules.functions]]
+name = "CapControls.ModeRead"
+mode = 2
+
+[[modules.functions]]
+name = "CapControls.ModeWrite"
+mode = 3
+
+[[modules.functions]]
+name = "CapControls.MonitoredTermRead"
+mode = 4
+
+[[modules.functions]]
+name = "CapControls.MonitoredTermWrite"
+mode = 5
+
+[[modules.functions]]
+name = "CapControls.UseVoltOverrideRead"
+mode = 6
+
+[[modules.functions]]
+name = "CapControls.UseVoltOverrideWrite"
+mode = 7
+
+[[modules.functions]]
+name = "CapControls.Count"
+mode = 8
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "CapControlsF"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "double"
+
+[[modules.functions]]
+name = "CapControls.CTRatioRead"
+mode = 0
+
+[[modules.functions]]
+name = "CapControls.CTRatioWrite"
+mode = 1
+
+[[modules.functions]]
+name = "CapControls.PTRatioRead"
+mode = 2
+
+[[modules.functions]]
+name = "CapControls.PTRatioWrite"
+mode = 3
+
+[[modules.functions]]
+name = "CapControls.ONSettingRead"
+mode = 4
+
+[[modules.functions]]
+name = "CapControls.ONSettingWrite"
+mode = 5
+
+[[modules.functions]]
+name = "CapControls.OFFSettingRead"
+mode = 6
+
+[[modules.functions]]
+name = "CapControls.OFFSettingWrite"
+mode = 7
+
+[[modules.functions]]
+name = "CapControls.VmaxRead"
+mode = 8
+
+[[modules.functions]]
+name = "CapControls.VmaxWrite"
+mode = 9
+
+[[modules.functions]]
+name = "CapControls.VminRead"
+mode = 10
+
+[[modules.functions]]
+name = "CapControls.VminWrite"
+mode = 11
+
+[[modules.functions]]
+name = "CapControls.DelayRead"
+mode = 12
+
+[[modules.functions]]
+name = "CapControls.DelayWrite"
+mode = 13
+
+[[modules.functions]]
+name = "CapControls.DelayOffRead"
+mode = 14
+
+[[modules.functions]]
+name = "CapControls.DelayOffWrite"
+mode = 15
+
+
+[modules.output]
+type = "double"
+[[modules]]
+name = "CapControlsS"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "CapControl.NameRead"
+mode = 0
+
+[[modules.functions]]
+name = "CapControl.NameWrite"
+mode = 1
+
+[[modules.functions]]
+name = "CapControl.CapacitorRead"
+mode = 2
+
+[[modules.functions]]
+name = "CapControl.CapacitorWrite"
+mode = 3
+
+[[modules.functions]]
+name = "CapControl.MonitoredObjRead"
+mode = 4
+
+[[modules.functions]]
+name = "CapControl.MonitoredObjWrite"
+mode = 5
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "CapControlsV"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "variant"
+
+[[modules.functions]]
+name = "Capcontrols.AllNames"
+mode = 0
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "CircuitI"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "Circuit.NumCktElements"
+mode = 0
+
+[[modules.functions]]
+name = "Circuit.NumBuses"
+mode = 1
+
+[[modules.functions]]
+name = "Circuit.NumNodes"
+mode = 2
+
+[[modules.functions]]
+name = "Circuit.FirstPCElement"
+mode = 3
+
+[[modules.functions]]
+name = "Circuit.NextPCElement"
+mode = 4
+
+[[modules.functions]]
+name = "Circuit.FirstPDElement"
+mode = 5
+
+[[modules.functions]]
+name = "Circuit.NextPDElement"
+mode = 6
+
+[[modules.functions]]
+name = "Circuit.Sample"
+mode = 7
+
+[[modules.functions]]
+name = "Circuit.SaveSample"
+mode = 8
+
+[[modules.functions]]
+name = "Circuit.SetActiveBusi"
+mode = 9
+
+[[modules.functions]]
+name = "Circuit.FirstElement"
+mode = 10
+
+[[modules.functions]]
+name = "Circuit.NextElement"
+mode = 11
+
+[[modules.functions]]
+name = "Circuit.UpdateStorage"
+mode = 12
+
+[[modules.functions]]
+name = "Circuit.ParentPDElement"
+mode = 13
+
+[[modules.functions]]
+name = "Circuit.EndOfTimeStepUpdate"
+mode = 14
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "CircuitF"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg1"
+type = "double"
+
+[[modules.input]]
+name = "arg2"
+type = "double"
+
+[[modules.functions]]
+name = "Circuit.Capacity"
+mode = 0
+
+
+[modules.output]
+type = "double"
+[[modules]]
+name = "CircuitS"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "Circuit.Name"
+mode = 0
+
+[[modules.functions]]
+name = "Circuit.Disable"
+mode = 1
+
+[[modules.functions]]
+name = "Circuit.Enable"
+mode = 2
+
+[[modules.functions]]
+name = "Circuit.SetActiveElement"
+mode = 3
+
+[[modules.functions]]
+name = "Circuit.SetActiveBus"
+mode = 4
+
+[[modules.functions]]
+name = "Circuit.SetActiveClass"
+mode = 5
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "CircuitV"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "variant"
+
+[[modules.input]]
+name = "arg2"
+type = "longint"
+
+[[modules.functions]]
+name = "Circuit.Losses"
+mode = 0
+
+[[modules.functions]]
+name = "Circuit.LineLosses"
+mode = 1
+
+[[modules.functions]]
+name = "Circuit.SubstationLosses"
+mode = 2
+
+[[modules.functions]]
+name = "Circuit.TotalPower"
+mode = 3
+
+[[modules.functions]]
+name = "Circuit.AllBusVolts"
+mode = 4
+
+[[modules.functions]]
+name = "Circuit.AllBusVMag"
+mode = 5
+
+[[modules.functions]]
+name = "Circuit.AllElementNames"
+mode = 6
+
+[[modules.functions]]
+name = "Circuit.AllElementLosses"
+mode = 8
+
+[[modules.functions]]
+name = "Circuit.AllBusMagPu"
+mode = 9
+
+[[modules.functions]]
+name = "Circuit.AllNodeNames"
+mode = 10
+
+[[modules.functions]]
+name = "Circuit.SystemY"
+mode = 11
+
+[[modules.functions]]
+name = "Circuit.AllBusDistances"
+mode = 12
+
+[[modules.functions]]
+name = "Circuit.AllNodeDistances"
+mode = 13
+
+[[modules.functions]]
+name = "Circuit.AllNodeVmagByPhase"
+mode = 14
+
+[[modules.functions]]
+name = "Circuit.AllNodeVmagPUByPhase"
+mode = 15
+
+[[modules.functions]]
+name = "Circuit.AllNodeDistancesByPhase"
+mode = 16
+
+[[modules.functions]]
+name = "Circuit.AllNodeNamesByPhase"
+mode = 17
+
+[[modules.functions]]
+name = "Circuit.YNodeVArray"
+mode = 18
+
+[[modules.functions]]
+name = "Circuit.YNodeOrder"
+mode = 19
+
+[[modules.functions]]
+name = "Circuit.YCurrents"
+mode = 20
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "CktElementI"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "CktElement.Numterminals"
+mode = 0
+
+[[modules.functions]]
+name = "CktElement.NumConductors"
+mode = 1
+
+[[modules.functions]]
+name = "CktElement.NumPhases"
+mode = 2
+
+[[modules.functions]]
+name = "CktElement.Open"
+mode = 3
+
+[[modules.functions]]
+name = "CktElement.Close"
+mode = 4
+
+[[modules.functions]]
+name = "CktElement.IsOpen"
+mode = 5
+
+[[modules.functions]]
+name = "CktElement.NumProperties"
+mode = 6
+
+[[modules.functions]]
+name = "CktElement.HasSwitchControl"
+mode = 7
+
+[[modules.functions]]
+name = "CktElement.HasVoltControl"
+mode = 8
+
+[[modules.functions]]
+name = "CktElement.NumControls"
+mode = 9
+
+[[modules.functions]]
+name = "CktElement.OCPDevIndex"
+mode = 10
+
+[[modules.functions]]
+name = "CktElement.OCPDevType"
+mode = 11
+
+[[modules.functions]]
+name = "CktElement.enabledRead"
+mode = 12
+
+[[modules.functions]]
+name = "CktElement.enabledWrite"
+mode = 13
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "CktElementF"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "double"
+
+[[modules.functions]]
+name = "CktElement.NormalAmpsRead"
+mode = 0
+
+[[modules.functions]]
+name = "CktElement.NormalAmpsWrite"
+mode = 1
+
+[[modules.functions]]
+name = "CktElement.EmergAmpsRead"
+mode = 2
+
+[[modules.functions]]
+name = "CktElement.EmergAmpsWrite"
+mode = 3
+
+[[modules.functions]]
+name = "CktElement.variablei"
+mode = 4
+
+
+[modules.output]
+type = "double"
+[[modules]]
+name = "CktElementS"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "CktElement.Name"
+mode = 0
+
+[[modules.functions]]
+name = "CktElement.DisplayRead"
+mode = 1
+
+[[modules.functions]]
+name = "CktElement.DisplayWrite"
+mode = 2
+
+[[modules.functions]]
+name = "CktElement.GUID"
+mode = 3
+
+[[modules.functions]]
+name = "CktElement.EnergyMeter"
+mode = 4
+
+[[modules.functions]]
+name = "CktElement.Controller"
+mode = 5
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "CktElementV"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "variant"
+
+[[modules.functions]]
+name = "CktElement.BusNamesRead"
+mode = 0
+
+[[modules.functions]]
+name = "CktElement.BusNamesWrite"
+mode = 1
+
+[[modules.functions]]
+name = "CktElement.Voltages"
+mode = 2
+
+[[modules.functions]]
+name = "CktElement.Currents"
+mode = 3
+
+[[modules.functions]]
+name = "CktElement.Powers"
+mode = 4
+
+[[modules.functions]]
+name = "CktElement.Losses"
+mode = 5
+
+[[modules.functions]]
+name = "CktElement.Phaselosses"
+mode = 6
+
+[[modules.functions]]
+name = "CktElement.SeqVoltages"
+mode = 7
+
+[[modules.functions]]
+name = "CktElement.SeqCurrents"
+mode = 8
+
+[[modules.functions]]
+name = "CktElement.Seqpowers"
+mode = 9
+
+[[modules.functions]]
+name = "CktElement.AllpropertyNames"
+mode = 10
+
+[[modules.functions]]
+name = "CktElement.Residuals"
+mode = 11
+
+[[modules.functions]]
+name = "CktElement.YPrim"
+mode = 12
+
+[[modules.functions]]
+name = "CktElement.CplxSeqVoltages"
+mode = 13
+
+[[modules.functions]]
+name = "CktElement.CplxSeqCurrents"
+mode = 14
+
+[[modules.functions]]
+name = "CktElement.AllVariableNames"
+mode = 15
+
+[[modules.functions]]
+name = "CktElement.AllVariableValues"
+mode = 16
+
+[[modules.functions]]
+name = "CktElement.Nodeorder"
+mode = 17
+
+[[modules.functions]]
+name = "CktElement.CurrentsMagAng"
+mode = 18
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "CmathLibF"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg1"
+type = "double"
+
+[[modules.input]]
+name = "arg2"
+type = "double"
+
+[[modules.functions]]
+name = "CmathLib.Cabs"
+mode = 0
+
+
+[modules.output]
+type = "double"
+[[modules]]
+name = "CmathLibV"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "Realpart"
+type = "double"
+
+[[modules.input]]
+name = "ImagPart"
+type = "double"
+
+[[modules.input]]
+name = "arg"
+type = "variant"
+
+[[modules.functions]]
+name = "CmathLib.Cmplx"
+mode = 0
+
+[[modules.functions]]
+name = "CmathLib.ctopolardeg"
+mode = 1
+
+[[modules.functions]]
+name = "CmathLib.pdegtocomplex"
+mode = 2
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "CtrlQueueI"
+exported = false
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "CtrlQueue.ClearQueue"
+mode = 0
+
+[[modules.functions]]
+name = "CtrlQueue.Delete"
+mode = 1
+
+[[modules.functions]]
+name = "CtrlQueue.NumActions"
+mode = 2
+
+[[modules.functions]]
+name = "CtrlQueue.Action"
+mode = 3
+
+[[modules.functions]]
+name = "CtrlQueue.ActionCode"
+mode = 4
+
+[[modules.functions]]
+name = "CtrlQueue.DeviceHandle"
+mode = 5
+
+[[modules.functions]]
+name = "CtrlQueue.Push"
+mode = 6
+
+[[modules.functions]]
+name = "CtrlQueue.Show"
+mode = 7
+
+[[modules.functions]]
+name = "CtrlQueue.ClearActions"
+mode = 8
+
+[[modules.functions]]
+name = "CtrlQueue.PopAction"
+mode = 9
+
+[[modules.functions]]
+name = "CtrlQueue.Get_QueueSize"
+mode = 10
+
+[[modules.functions]]
+name = "CtrlQueue.DoAllQueue"
+mode = 11
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "CtrlQueueV"
+exported = false
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "variant"
+
+[[modules.functions]]
+name = "CtrlQueue.ClearQueue"
+mode = 0
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "DSSI"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "DSS.NumCircuits"
+mode = 0
+
+[[modules.functions]]
+name = "DSS.ClearAll"
+mode = 1
+
+[[modules.functions]]
+name = "DSS.ShowPanel"
+mode = 2
+
+[[modules.functions]]
+name = "DSS.Start"
+mode = 3
+
+[[modules.functions]]
+name = "DSS.NumClasses"
+mode = 4
+
+[[modules.functions]]
+name = "DSS.NumUserClasses"
+mode = 5
+
+[[modules.functions]]
+name = "DSS.Reset"
+mode = 6
+
+[[modules.functions]]
+name = "DSS.AllowformsRead"
+mode = 7
+
+[[modules.functions]]
+name = "DSS.AllowformsWrite"
+mode = 8
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "DSSS"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "DSS.NewCircuit"
+mode = 0
+
+[[modules.functions]]
+name = "DSS.Version"
+mode = 1
+
+[[modules.functions]]
+name = "DSS.DataPathRead"
+mode = 2
+
+[[modules.functions]]
+name = "DSS.DataPathWrite"
+mode = 3
+
+[[modules.functions]]
+name = "DSS.DefaultEditor"
+mode = 4
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "DSSV"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "variant"
+
+[[modules.functions]]
+name = "DSS.Classes"
+mode = 0
+
+[[modules.functions]]
+name = "DSS.UserClasses"
+mode = 1
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "DSSElementI"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "DSSElement.NumProperties"
+mode = 0
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "DSSElementS"
+exported = true
+functions = []
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "DSSElementV"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "variant"
+
+[[modules.functions]]
+name = "DSSElement.AllPropertyNames"
+mode = 0
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "DSSExecutiveI"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "DSS_executive.NumCommands"
+mode = 0
+
+[[modules.functions]]
+name = "DSS_executive.NumOptions"
+mode = 1
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "DSSExecutiveS"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "DSS_Executive.Command"
+mode = 0
+
+[[modules.functions]]
+name = "DSS_Executive.Option"
+mode = 1
+
+[[modules.functions]]
+name = "DSS_Executive.CommandHelp"
+mode = 2
+
+[[modules.functions]]
+name = "DSS_Executive.OptionHelp"
+mode = 3
+
+[[modules.functions]]
+name = "DSS_Executive.OptionValue"
+mode = 4
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "DSSProgressI"
+exported = false
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "DSSProgress.PctProgress"
+mode = 0
+
+[[modules.functions]]
+name = "DSSProgress.Show()"
+mode = 1
+
+[[modules.functions]]
+name = "DSSProgress.Close()"
+mode = 2
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "DSSProgressS"
+exported = false
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "DSSProgress.Caption"
+mode = 0
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "ErrorCode"
+input = []
+exported = true
+functions = []
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "ErrorDes"
+input = []
+exported = false
+functions = []
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "FusesI"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "Fuses.Count"
+mode = 0
+
+[[modules.functions]]
+name = "Fuses.First"
+mode = 1
+
+[[modules.functions]]
+name = "Fuses.Next"
+mode = 2
+
+[[modules.functions]]
+name = "Fuse.MonitoredTermRead"
+mode = 3
+
+[[modules.functions]]
+name = "Fuse.MonitoredTermWrite"
+mode = 4
+
+[[modules.functions]]
+name = "Fuse.Open"
+mode = 5
+
+[[modules.functions]]
+name = "Fuse.Close"
+mode = 6
+
+[[modules.functions]]
+name = "Fuse.IsBlown"
+mode = 7
+
+[[modules.functions]]
+name = "Fuse.IdxRead"
+mode = 8
+
+[[modules.functions]]
+name = "Fuse.IdxWrite"
+mode = 9
+
+[[modules.functions]]
+name = "Fuse.NumPhases"
+mode = 10
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "FusesF"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "double"
+
+[[modules.functions]]
+name = "Fuses.RatedCurrentRead"
+mode = 0
+
+[[modules.functions]]
+name = "Fuses.RatedCurrentWrite"
+mode = 1
+
+
+[modules.output]
+type = "double"
+[[modules]]
+name = "FusesS"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "Fuses.NameRead"
+mode = 0
+
+[[modules.functions]]
+name = "Fuses.NameWrite"
+mode = 1
+
+[[modules.functions]]
+name = "Fuses.MonitoredObjRead"
+mode = 2
+
+[[modules.functions]]
+name = "Fuses.MonitoredObjWrite"
+mode = 3
+
+[[modules.functions]]
+name = "Fuses.SwitchedObjRead"
+mode = 4
+
+[[modules.functions]]
+name = "Fuses.SwitchedObjWrite"
+mode = 5
+
+[[modules.functions]]
+name = "Fuses.TCCcurveRead"
+mode = 6
+
+[[modules.functions]]
+name = "Fuses.TCCcurveWrite"
+mode = 7
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "FusesV"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "variant"
+
+[[modules.functions]]
+name = "Fuses.AllName"
+mode = 0
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "GeneratorsI"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "Generators.First"
+mode = 0
+
+[[modules.functions]]
+name = "Generators.Next"
+mode = 1
+
+[[modules.functions]]
+name = "Generators.ForcedONRead"
+mode = 2
+
+[[modules.functions]]
+name = "Generators.ForcedONWrite"
+mode = 3
+
+[[modules.functions]]
+name = "Generators.PhasesRead"
+mode = 4
+
+[[modules.functions]]
+name = "Generators.PhasesWrite"
+mode = 5
+
+[[modules.functions]]
+name = "Generators.Count"
+mode = 6
+
+[[modules.functions]]
+name = "Generators.IdxRead"
+mode = 7
+
+[[modules.functions]]
+name = "Generators.IdxWrite"
+mode = 8
+
+[[modules.functions]]
+name = "Generators.ModelRead"
+mode = 9
+
+[[modules.functions]]
+name = "Generators.ModelWrite"
+mode = 10
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "GeneratorsF"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "double"
+
+[[modules.functions]]
+name = "Generators.kVRead"
+mode = 0
+
+[[modules.functions]]
+name = "Generators.kVWrite"
+mode = 1
+
+[[modules.functions]]
+name = "Generators.kWRead"
+mode = 2
+
+[[modules.functions]]
+name = "Generators.kWWrite"
+mode = 3
+
+[[modules.functions]]
+name = "Generators.kvarRead"
+mode = 4
+
+[[modules.functions]]
+name = "Generator.kvarWrite"
+mode = 5
+
+[[modules.functions]]
+name = "Generators.PFRead"
+mode = 6
+
+[[modules.functions]]
+name = "Generators.PFWrite"
+mode = 7
+
+[[modules.functions]]
+name = "Generators.KVARatedRead"
+mode = 8
+
+[[modules.functions]]
+name = "Generators.KVARatedWrite"
+mode = 9
+
+[[modules.functions]]
+name = "Generators.VmaxpuRead"
+mode = 10
+
+[[modules.functions]]
+name = "Generators.VmaxpuWrite"
+mode = 11
+
+[[modules.functions]]
+name = "Generators.VminpuRead"
+mode = 12
+
+[[modules.functions]]
+name = "Generators.VminpuWrite"
+mode = 13
+
+
+[modules.output]
+type = "double"
+[[modules]]
+name = "GeneratorsS"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "Generators.NameRead"
+mode = 0
+
+[[modules.functions]]
+name = "Generators.NameWrite"
+mode = 1
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "GeneratorsV"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "variant"
+
+[[modules.functions]]
+name = "Generators.AllNames"
+mode = 0
+
+[[modules.functions]]
+name = "Generators.RegisterNames"
+mode = 1
+
+[[modules.functions]]
+name = "Generators.RegisterValues"
+mode = 2
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "DSSProperties"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "DSSProperties.Name"
+mode = 0
+
+[[modules.functions]]
+name = "DSSProperties.Description"
+mode = 1
+
+[[modules.functions]]
+name = "DSSProperties.ValueRead"
+mode = 2
+
+[[modules.functions]]
+name = "DSSProperties.ValueWrite"
+mode = 3
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "IsourceI"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "Isources.Count"
+mode = 0
+
+[[modules.functions]]
+name = "Isources.First"
+mode = 1
+
+[[modules.functions]]
+name = "Isources.Next"
+mode = 2
+
+
+[modules.output]
+type = "Longint"
+[[modules]]
+name = "IsourceF"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "double"
+
+[[modules.functions]]
+name = "Isources.AmpsRead"
+mode = 0
+
+[[modules.functions]]
+name = "Isources.AmpsWrite"
+mode = 1
+
+[[modules.functions]]
+name = "Isources.AngleDegRead"
+mode = 2
+
+[[modules.functions]]
+name = "Isources.AngleDegWrite"
+mode = 3
+
+[[modules.functions]]
+name = "Isources.FrequencyRead"
+mode = 4
+
+[[modules.functions]]
+name = "Isources.FrequencyWrite"
+mode = 5
+
+
+[modules.output]
+type = "double"
+[[modules]]
+name = "IsourceS"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "Isources.NameRead"
+mode = 0
+
+[[modules.functions]]
+name = "Isoruces.NameWrite"
+mode = 1
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "IsourceV"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "variant"
+
+[[modules.functions]]
+name = "Isources.AllNames"
+mode = 0
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "LineCodesI"
+exported = false
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "LineCodes.Count"
+mode = 0
+
+[[modules.functions]]
+name = "LineCodes.First"
+mode = 1
+
+[[modules.functions]]
+name = "LineCodes.Next"
+mode = 2
+
+[[modules.functions]]
+name = "LineCodes.UnitsRead"
+mode = 3
+
+[[modules.functions]]
+name = "LineCodes.UnitsWrite"
+mode = 4
+
+[[modules.functions]]
+name = "LineCodes.PhasesRead"
+mode = 5
+
+[[modules.functions]]
+name = "LineCodes.PhasesWrite"
+mode = 6
+
+[[modules.functions]]
+name = "LineCodes.IsZ1Z0"
+mode = 7
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "LineCodesF"
+exported = false
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "double"
+
+[[modules.functions]]
+name = "LineCodes.R1Read"
+mode = 0
+
+[[modules.functions]]
+name = "LineCodes.R1Write"
+mode = 1
+
+[[modules.functions]]
+name = "LineCodes.X1Read"
+mode = 2
+
+[[modules.functions]]
+name = "LineCodes.X1Write"
+mode = 3
+
+[[modules.functions]]
+name = "LineCodes.R0Read"
+mode = 4
+
+[[modules.functions]]
+name = "LineCodes.R0Write"
+mode = 5
+
+[[modules.functions]]
+name = "LineCodes.X0Read"
+mode = 6
+
+[[modules.functions]]
+name = "LineCodes.X0Write"
+mode = 7
+
+[[modules.functions]]
+name = "LineCodes.C1Read"
+mode = 8
+
+[[modules.functions]]
+name = "LineCodes.C1Write"
+mode = 9
+
+[[modules.functions]]
+name = "LineCodes.C0Read"
+mode = 10
+
+[[modules.functions]]
+name = "LineCodes.C0Write"
+mode = 11
+
+[[modules.functions]]
+name = "LineCodes.NormAmpsRead"
+mode = 12
+
+[[modules.functions]]
+name = "LineCodes.NormAmpsWrite"
+mode = 13
+
+[[modules.functions]]
+name = "LineCodes.EmergAmpsRead"
+mode = 14
+
+[[modules.functions]]
+name = "LineCodes.NormAmpsWrite"
+mode = 15
+
+
+[modules.output]
+type = "double"
+[[modules]]
+name = "LineCodesS"
+exported = false
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "LineCodes.NameRead"
+mode = 0
+
+[[modules.functions]]
+name = "LineCodes.NameWrite"
+mode = 1
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "LineCodesV"
+exported = false
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "variant"
+
+[[modules.functions]]
+name = "LineCodes.RmatrixRead"
+mode = 0
+
+[[modules.functions]]
+name = "LineCodes.RmatrixWrite"
+mode = 1
+
+[[modules.functions]]
+name = "LineCodes.XmatrixRead"
+mode = 2
+
+[[modules.functions]]
+name = "LineCodes.XmatrixWrite"
+mode = 3
+
+[[modules.functions]]
+name = "LineCodes.CmatrixRead"
+mode = 4
+
+[[modules.functions]]
+name = "LineCodes.CmatrixWrite"
+mode = 5
+
+[[modules.functions]]
+name = "LineCodes.AllNames"
+mode = 6
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "LinesI"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "Lines.First"
+mode = 0
+
+[[modules.functions]]
+name = "Lines.Next"
+mode = 1
+
+[[modules.functions]]
+name = "Lines.PhasesRead"
+mode = 2
+
+[[modules.functions]]
+name = "Lines.PhasesWrite"
+mode = 3
+
+[[modules.functions]]
+name = "Lines.NumCust"
+mode = 4
+
+[[modules.functions]]
+name = "Lines.Parent"
+mode = 5
+
+[[modules.functions]]
+name = "Lines.Count"
+mode = 6
+
+[[modules.functions]]
+name = "Lines.UnitsRead"
+mode = 7
+
+[[modules.functions]]
+name = "Line.UnitsWrite"
+mode = 8
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "LinesF"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "double"
+
+[[modules.functions]]
+name = "Lines.LengthRead"
+mode = 0
+
+[[modules.functions]]
+name = "Lines.LengthWrite"
+mode = 1
+
+[[modules.functions]]
+name = "Lines.R1Read"
+mode = 2
+
+[[modules.functions]]
+name = "Lines.R1Write"
+mode = 3
+
+[[modules.functions]]
+name = "Lines.X1Read"
+mode = 4
+
+[[modules.functions]]
+name = "Lines.X1Write"
+mode = 5
+
+[[modules.functions]]
+name = "Lines.R0Read"
+mode = 6
+
+[[modules.functions]]
+name = "Lines.R0Write"
+mode = 7
+
+[[modules.functions]]
+name = "Lines.X0Read"
+mode = 8
+
+[[modules.functions]]
+name = "Lines.X0Write"
+mode = 9
+
+[[modules.functions]]
+name = "Lines.C1Read"
+mode = 10
+
+[[modules.functions]]
+name = "Lines.C1Write"
+mode = 11
+
+[[modules.functions]]
+name = "Lines.C0Read"
+mode = 12
+
+[[modules.functions]]
+name = "Line.C0Write"
+mode = 13
+
+[[modules.functions]]
+name = "Lines.NormAmpsRead"
+mode = 14
+
+[[modules.functions]]
+name = "Lines.NormAmpsWrite"
+mode = 15
+
+[[modules.functions]]
+name = "Lines.EmergAmpsRead"
+mode = 16
+
+[[modules.functions]]
+name = "Lines.EmergAmpsWrite"
+mode = 17
+
+[[modules.functions]]
+name = "Lines.RgRead"
+mode = 18
+
+[[modules.functions]]
+name = "Lines.RgWrite"
+mode = 19
+
+[[modules.functions]]
+name = "Lines.XgRead"
+mode = 20
+
+[[modules.functions]]
+name = "Lines.XgWrite"
+mode = 21
+
+[[modules.functions]]
+name = "Lines.RhoRead"
+mode = 22
+
+[[modules.functions]]
+name = "Lines.RhoWrite"
+mode = 23
+
+
+[modules.output]
+type = "double"
+[[modules]]
+name = "LinesS"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "Lines.NameRead"
+mode = 0
+
+[[modules.functions]]
+name = "Lines.NameWrite"
+mode = 1
+
+[[modules.functions]]
+name = "Lines.Bus1Read"
+mode = 2
+
+[[modules.functions]]
+name = "Lines.Bus1Write"
+mode = 3
+
+[[modules.functions]]
+name = "Lines.Bus2Read"
+mode = 4
+
+[[modules.functions]]
+name = "Lines.Bus2Write"
+mode = 5
+
+[[modules.functions]]
+name = "Lines.LineCodeRead"
+mode = 6
+
+[[modules.functions]]
+name = "Lines.LineCodeWrite"
+mode = 7
+
+[[modules.functions]]
+name = "Lines.GeometryRead"
+mode = 8
+
+[[modules.functions]]
+name = "Lines.GeometryWrite"
+mode = 9
+
+[[modules.functions]]
+name = "Lines.SpacingRead"
+mode = 10
+
+[[modules.functions]]
+name = "Lines.SpacingWrite"
+mode = 11
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "LinesV"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "variant"
+
+[[modules.functions]]
+name = "Lines/AllNames"
+mode = 0
+
+[[modules.functions]]
+name = "Lines.RMatrixRead"
+mode = 1
+
+[[modules.functions]]
+name = "Lines.RMatrixWrite"
+mode = 2
+
+[[modules.functions]]
+name = "Lines.XmatrixRead"
+mode = 3
+
+[[modules.functions]]
+name = "Lines.XMatrixWrite"
+mode = 4
+
+[[modules.functions]]
+name = "Lines.CMatrixRead"
+mode = 5
+
+[[modules.functions]]
+name = "Lines.CMatrixWrite"
+mode = 6
+
+[[modules.functions]]
+name = "Lines.YprimRead"
+mode = 7
+
+[[modules.functions]]
+name = "Lines.YprimWrite"
+mode = 8
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "DSSLoads"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "Loads.FirstRead"
+mode = 0
+
+[[modules.functions]]
+name = "Loads.NextRead"
+mode = 1
+
+[[modules.functions]]
+name = "Loads.IdxRead"
+mode = 2
+
+[[modules.functions]]
+name = "Loads.IdxWrite"
+mode = 3
+
+[[modules.functions]]
+name = "Loads.Count"
+mode = 4
+
+[[modules.functions]]
+name = "Loads.ClassRead"
+mode = 5
+
+[[modules.functions]]
+name = "Loads.ClassWrite"
+mode = 6
+
+[[modules.functions]]
+name = "Loads.ModelRead"
+mode = 7
+
+[[modules.functions]]
+name = "Loads.ModelWrite"
+mode = 8
+
+[[modules.functions]]
+name = "Loads.NumCustRead"
+mode = 9
+
+[[modules.functions]]
+name = "Loads.NumCustWrite"
+mode = 10
+
+[[modules.functions]]
+name = "Loads.StatusRead"
+mode = 11
+
+[[modules.functions]]
+name = "Loads.StatusWrite"
+mode = 12
+
+[[modules.functions]]
+name = "Loads.IsDeltaRead"
+mode = 13
+
+[[modules.functions]]
+name = "Loads.IsDeltaWrite"
+mode = 14
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "DSSLoadsF"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "double"
+
+[[modules.functions]]
+name = "Loads.kWRead"
+mode = 0
+
+[[modules.functions]]
+name = "Loads.kWWrite"
+mode = 1
+
+[[modules.functions]]
+name = "Loads.kVRead"
+mode = 2
+
+[[modules.functions]]
+name = "Loads.kVWrite"
+mode = 3
+
+[[modules.functions]]
+name = "Loads.kvarRead"
+mode = 4
+
+[[modules.functions]]
+name = "Loads.kvarWrite"
+mode = 5
+
+[[modules.functions]]
+name = "Loads.PFRead"
+mode = 6
+
+[[modules.functions]]
+name = "Loads.PFWrite"
+mode = 7
+
+[[modules.functions]]
+name = "Loads.PctMeanRead"
+mode = 8
+
+[[modules.functions]]
+name = "Loads.PctMeanWrite"
+mode = 9
+
+[[modules.functions]]
+name = "Loads.PctStdDevRead"
+mode = 10
+
+
+[modules.output]
+type = "double"
+[[modules]]
+name = "DSSLoadsS"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "Loads.NameRead"
+mode = 0
+
+[[modules.functions]]
+name = "Loads.NameWrite"
+mode = 1
+
+[[modules.functions]]
+name = "Loads.CVRCurveRead"
+mode = 2
+
+[[modules.functions]]
+name = "Loads.CVRCurveWrite"
+mode = 3
+
+[[modules.functions]]
+name = "Loads.DailyRead"
+mode = 4
+
+[[modules.functions]]
+name = "Loads.DailyWrite"
+mode = 5
+
+[[modules.functions]]
+name = "Loads.DutyRead"
+mode = 6
+
+[[modules.functions]]
+name = "Loads.DutyWrite"
+mode = 7
+
+[[modules.functions]]
+name = "Loads.SpectrumRead"
+mode = 8
+
+[[modules.functions]]
+name = "Loads.SpectrumWrite"
+mode = 9
+
+[[modules.functions]]
+name = "Loads.YearlyRead"
+mode = 10
+
+[[modules.functions]]
+name = "Loads.YearlyWrite"
+mode = 11
+
+[[modules.functions]]
+name = "Loads.GrowthRead"
+mode = 12
+
+[[modules.functions]]
+name = "Loads.GrowthWrite"
+mode = 13
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "DSSLoadsV"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "variant"
+
+[[modules.functions]]
+name = "Loads.Allnames"
+mode = 0
+
+[[modules.functions]]
+name = "Loads.ZIPVRead"
+mode = 1
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "LoadShapeI"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "LoadShapes.Count"
+mode = 0
+
+[[modules.functions]]
+name = "LoadShapes.First"
+mode = 1
+
+[[modules.functions]]
+name = "LoadShapes.Next"
+mode = 2
+
+[[modules.functions]]
+name = "LoadShapes.NptsRead"
+mode = 3
+
+[[modules.functions]]
+name = "LoadShapes.NptsWrite"
+mode = 4
+
+[[modules.functions]]
+name = "LoadShapes.Normalize"
+mode = 5
+
+[[modules.functions]]
+name = "LoadShapes.UseActualRead"
+mode = 6
+
+[[modules.functions]]
+name = "LoadShapes.UseActualWrite"
+mode = 7
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "LoadShapeF"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "double"
+
+[[modules.functions]]
+name = "LoadShapes.HrIntervalRead"
+mode = 0
+
+[[modules.functions]]
+name = "LoadShapes.HrIntervalWrite"
+mode = 1
+
+[[modules.functions]]
+name = "LoadShapes.MinIntervalRead"
+mode = 2
+
+[[modules.functions]]
+name = "LoadShapes.MinIntervalWrite"
+mode = 3
+
+[[modules.functions]]
+name = "LoadShapes.PBaseRead"
+mode = 4
+
+[[modules.functions]]
+name = "LoadShapes.PBaseWrite"
+mode = 5
+
+[[modules.functions]]
+name = "LoadShapes.QBaseRead"
+mode = 6
+
+[[modules.functions]]
+name = "LoadShapes.QBaseWrite"
+mode = 7
+
+[[modules.functions]]
+name = "LoadShapes.SintervalRead"
+mode = 8
+
+[[modules.functions]]
+name = "LoadShapes.SintervalWrite"
+mode = 9
+
+
+[modules.output]
+type = "double"
+[[modules]]
+name = "LoadShapeS"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "LoadShapes.NameRead"
+mode = 0
+
+[[modules.functions]]
+name = "LoadShapes.NameWrite"
+mode = 1
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "LoadShapeV"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "variant"
+
+[[modules.functions]]
+name = "LoadShapes.AllNames"
+mode = 0
+
+[[modules.functions]]
+name = "LoadShapes.PMultRead"
+mode = 1
+
+[[modules.functions]]
+name = "LoadShapes.PMultWrite"
+mode = 2
+
+[[modules.functions]]
+name = "LoadShapes.QMultRead"
+mode = 3
+
+[[modules.functions]]
+name = "LoadShapes.QMultWrite"
+mode = 4
+
+[[modules.functions]]
+name = "LoadShapes.TimearrayRead"
+mode = 5
+
+[[modules.functions]]
+name = "LoadShapes.TimearrayWrite"
+mode = 6
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "MetersI"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "Meters.First"
+mode = 0
+
+[[modules.functions]]
+name = "Meters.Next"
+mode = 1
+
+[[modules.functions]]
+name = "Meters.Reset"
+mode = 2
+
+[[modules.functions]]
+name = "Meters.ResetAll"
+mode = 3
+
+[[modules.functions]]
+name = "Meters.Sample"
+mode = 4
+
+[[modules.functions]]
+name = "Meters.Save"
+mode = 5
+
+[[modules.functions]]
+name = "Meters.MeteredTerminalRead"
+mode = 6
+
+[[modules.functions]]
+name = "Meters.DIFilesAreOpen"
+mode = 8
+
+[[modules.functions]]
+name = "Meters.SampleAll"
+mode = 9
+
+[[modules.functions]]
+name = "Meters.SaveAll"
+mode = 10
+
+[[modules.functions]]
+name = "Meters.OpenAllDIFiles"
+mode = 11
+
+[[modules.functions]]
+name = "Meters.CloseAllDIFiles"
+mode = 12
+
+[[modules.functions]]
+name = "Meters.CountEndElements"
+mode = 13
+
+[[modules.functions]]
+name = "Meters.Count"
+mode = 14
+
+[[modules.functions]]
+name = "Meters.CountBranches"
+mode = 15
+
+[[modules.functions]]
+name = "Meters.SequenceListRead"
+mode = 16
+
+[[modules.functions]]
+name = "Meters.SequenceListWrite"
+mode = 17
+
+[[modules.functions]]
+name = "Meters.DoReliabilityCalc"
+mode = 18
+
+[[modules.functions]]
+name = "Meters.SeqListSize"
+mode = 19
+
+[[modules.functions]]
+name = "Meters.TotalCustomers"
+mode = 20
+
+[[modules.functions]]
+name = "Meters.NumSections"
+mode = 21
+
+[[modules.functions]]
+name = "Meters.SetActiveSection"
+mode = 22
+
+[[modules.functions]]
+name = "Meters.OCPDeviceType"
+mode = 23
+
+[[modules.functions]]
+name = "Meters.NumSectionCustomers"
+mode = 24
+
+[[modules.functions]]
+name = "Meters.NumSectionBranches"
+mode = 25
+
+[[modules.functions]]
+name = "Meters.SectTotalCust"
+mode = 27
+
+
+[modules.output]
+type = "Longint"
+[[modules]]
+name = "MetersF"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "double"
+
+[[modules.functions]]
+name = "Meters.SAIFI"
+mode = 0
+
+[[modules.functions]]
+name = "Meters.SAIFIkW"
+mode = 1
+
+[[modules.functions]]
+name = "Meters.SAIDI"
+mode = 2
+
+[[modules.functions]]
+name = "Meters.CustItnerrupts"
+mode = 3
+
+[[modules.functions]]
+name = "Meters.AvgRepairTime"
+mode = 4
+
+[[modules.functions]]
+name = "Meters.FaultRateXRepairHrs"
+mode = 5
+
+[[modules.functions]]
+name = "Meters.SumBranchFltRates"
+mode = 6
+
+
+[modules.output]
+type = "double"
+[[modules]]
+name = "MetersS"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "Meters.NameRead"
+mode = 0
+
+[[modules.functions]]
+name = "Meters.NameWrite"
+mode = 1
+
+[[modules.functions]]
+name = "Meters.MeteredElementRead"
+mode = 2
+
+[[modules.functions]]
+name = "Meters.MeteredElementWrite"
+mode = 3
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "MetersV"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "variant"
+
+[[modules.functions]]
+name = "Meters.AllNames"
+mode = 0
+
+[[modules.functions]]
+name = "Meters.RegisterNames"
+mode = 1
+
+[[modules.functions]]
+name = "Meters.RegisterValues"
+mode = 2
+
+[[modules.functions]]
+name = "Meters.Totals"
+mode = 3
+
+[[modules.functions]]
+name = "Meters.PeakCurrentRead"
+mode = 4
+
+[[modules.functions]]
+name = "Meters.PeakCurrentWrite"
+mode = 5
+
+[[modules.functions]]
+name = "Meter.CalcCurrentRead"
+mode = 6
+
+[[modules.functions]]
+name = "Meters.CalcCurrentWrite"
+mode = 7
+
+[[modules.functions]]
+name = "Meters.AllocFactorsRead"
+mode = 8
+
+[[modules.functions]]
+name = "Meters.AllocFactorsWrite"
+mode = 9
+
+[[modules.functions]]
+name = "Meters.AllEndElements"
+mode = 10
+
+[[modules.functions]]
+name = "Meters.ALlBranchesInZone"
+mode = 11
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "MonitorsI"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "Monitors.First"
+mode = 0
+
+[[modules.functions]]
+name = "Monitors.Next"
+mode = 1
+
+[[modules.functions]]
+name = "Monitors.Reset"
+mode = 2
+
+[[modules.functions]]
+name = "Monitors.ResetAll"
+mode = 3
+
+[[modules.functions]]
+name = "Monitors.Sample"
+mode = 4
+
+[[modules.functions]]
+name = "Monitors.Save"
+mode = 5
+
+[[modules.functions]]
+name = "Monitors.Show"
+mode = 6
+
+[[modules.functions]]
+name = "Monitors.ModeRead"
+mode = 7
+
+[[modules.functions]]
+name = "Monitors.ModeWrite"
+mode = 8
+
+[[modules.functions]]
+name = "Monitors.SampleCount"
+mode = 9
+
+[[modules.functions]]
+name = "Monitors.SampleAll"
+mode = 10
+
+[[modules.functions]]
+name = "Monitor.SaveAll"
+mode = 11
+
+[[modules.functions]]
+name = "Monitor.Count"
+mode = 12
+
+[[modules.functions]]
+name = "Monitor.Process"
+mode = 13
+
+[[modules.functions]]
+name = "Monitor.ProcessAll"
+mode = 14
+
+[[modules.functions]]
+name = "Monitor.FileVersion"
+mode = 15
+
+[[modules.functions]]
+name = "Monitor.RecordSize"
+mode = 16
+
+[[modules.functions]]
+name = "Monitor.NumChannels"
+mode = 17
+
+[[modules.functions]]
+name = "Monitor.TerminalRead"
+mode = 18
+
+[[modules.functions]]
+name = "Monitor.TerminalWrite"
+mode = 19
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "MonitorsS"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "Monitors.FIleName"
+mode = 0
+
+[[modules.functions]]
+name = "Monitors.NameRead"
+mode = 1
+
+[[modules.functions]]
+name = "Monitors.NmeWrite"
+mode = 2
+
+[[modules.functions]]
+name = "Monitors.ElementRead"
+mode = 3
+
+[[modules.functions]]
+name = "Monitors.ElementWrite"
+mode = 4
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "MonitorsV"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "variant"
+
+[[modules.functions]]
+name = "Monitors.AllNames"
+mode = 0
+
+[[modules.functions]]
+name = "Monitor.ByteStream"
+mode = 1
+
+[[modules.functions]]
+name = "Monitors.dblHour"
+mode = 2
+
+[[modules.functions]]
+name = "Monitors.dblHour"
+mode = 3
+
+[[modules.functions]]
+name = "Monitors,dblFreq"
+mode = 4
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "ParserI"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "Parser.IntValue"
+mode = 0
+
+[[modules.functions]]
+name = "Parser.ResetDelimiters"
+mode = 1
+
+[[modules.functions]]
+name = "Parser.AutoincrementRead"
+mode = 2
+
+[[modules.functions]]
+name = "Parser.AutoincrementWrite"
+mode = 3
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "ParserF"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "double"
+
+[[modules.functions]]
+name = "Parser.DblValue"
+mode = 0
+
+
+[modules.output]
+type = "double"
+[[modules]]
+name = "ParserS"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "Parser.CmdStringRead"
+mode = 0
+
+[[modules.functions]]
+name = "Parser.CmdStringWrite"
+mode = 1
+
+[[modules.functions]]
+name = "Parser.NextParam"
+mode = 2
+
+[[modules.functions]]
+name = "Parser.StrValue"
+mode = 3
+
+[[modules.functions]]
+name = "Parser.WhiteSpaceRead"
+mode = 4
+
+[[modules.functions]]
+name = "Parser.WhiteSpaceWrite"
+mode = 5
+
+[[modules.functions]]
+name = "Parser.BeginQuoteRead"
+mode = 6
+
+[[modules.functions]]
+name = "Parser.BeginQuoteWrite"
+mode = 7
+
+[[modules.functions]]
+name = "Parser.EndQuoteRead"
+mode = 8
+
+[[modules.functions]]
+name = "Parser.EndQuoteWrite"
+mode = 9
+
+[[modules.functions]]
+name = "Parser.DelimitersRead"
+mode = 10
+
+[[modules.functions]]
+name = "Parser.DelimitersWrite"
+mode = 11
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "ParserV"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "variant"
+
+[[modules.functions]]
+name = "Parser.Vector"
+mode = 0
+
+[[modules.functions]]
+name = "Parser.Matrix"
+mode = 1
+
+[[modules.functions]]
+name = "Parser.SymMatrix"
+mode = 2
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "PDElementsI"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "PDElements.Count"
+mode = 0
+
+[[modules.functions]]
+name = "PDElements.First"
+mode = 1
+
+[[modules.functions]]
+name = "PDElements.Next"
+mode = 2
+
+[[modules.functions]]
+name = "PDElements.IsShunt"
+mode = 3
+
+[[modules.functions]]
+name = "PDElements.NumCustomers"
+mode = 4
+
+[[modules.functions]]
+name = "PDElements.TotalCustomers"
+mode = 5
+
+[[modules.functions]]
+name = "PDElements.ParentPDElement"
+mode = 6
+
+[[modules.functions]]
+name = "PDElements.FromTerminal"
+mode = 7
+
+[[modules.functions]]
+name = "PDElements.SectionID"
+mode = 8
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "PDElementsF"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "double"
+
+[[modules.functions]]
+name = "PDElements.FaultRateRead"
+mode = 0
+
+[[modules.functions]]
+name = "PDElements.FaultRateWrite"
+mode = 1
+
+[[modules.functions]]
+name = "PDElements.PctPermanentRead"
+mode = 2
+
+[[modules.functions]]
+name = "PDElements.PctPermanentWrite"
+mode = 3
+
+[[modules.functions]]
+name = "PDElements.Lambda"
+mode = 4
+
+[[modules.functions]]
+name = "PDElements.AccumulatedL"
+mode = 5
+
+[[modules.functions]]
+name = "PDElements.RepairTime"
+mode = 6
+
+[[modules.functions]]
+name = "PDElements.TotalMiles"
+mode = 7
+
+
+[modules.output]
+type = "double"
+[[modules]]
+name = "PDElementsS"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "PDElements.NameRead"
+mode = 0
+
+[[modules.functions]]
+name = "PDElements.NameWrite"
+mode = 1
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "PVsystemsI"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "PVSystems.Count"
+mode = 0
+
+[[modules.functions]]
+name = "PVSystems.First"
+mode = 1
+
+[[modules.functions]]
+name = "PVSystems.Next"
+mode = 2
+
+[[modules.functions]]
+name = "PVSystems.IdxRead"
+mode = 3
+
+[[modules.functions]]
+name = "PVSystems.IdxWrite"
+mode = 4
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "PVsystemsF"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "double"
+
+[[modules.functions]]
+name = "PVSystems.IrradianceRead"
+mode = 0
+
+[[modules.functions]]
+name = "PVSystems.IrradianceWrite"
+mode = 1
+
+[[modules.functions]]
+name = "PVSystems.kW"
+mode = 2
+
+[[modules.functions]]
+name = "PVSystems.kvarRead"
+mode = 3
+
+[[modules.functions]]
+name = "PVSystems.kvarWrite"
+mode = 4
+
+[[modules.functions]]
+name = "PVSystems.pfRead"
+mode = 5
+
+[[modules.functions]]
+name = "PVSystems.pfWrite"
+mode = 6
+
+[[modules.functions]]
+name = "PVSystems.kVARatedRead"
+mode = 7
+
+[[modules.functions]]
+name = "PVSystems.kVARatedWrite"
+mode = 8
+
+
+[modules.output]
+type = "double"
+[[modules]]
+name = "PVsystemsS"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "PVSystems.NameRead"
+mode = 0
+
+[[modules.functions]]
+name = "PVSystems.NameWrite"
+mode = 1
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "PVsystemsV"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "variant"
+
+[[modules.functions]]
+name = "PVSystems.AllNames"
+mode = 0
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "ReclosersI"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "Reclosers.Count"
+mode = 0
+
+[[modules.functions]]
+name = "Reclosers.First"
+mode = 1
+
+[[modules.functions]]
+name = "Reclosers.Next"
+mode = 2
+
+[[modules.functions]]
+name = "Reclosers.MonitoredTermRead"
+mode = 3
+
+[[modules.functions]]
+name = "Reclosers.MonitoredTermWrite"
+mode = 4
+
+[[modules.functions]]
+name = "Reclosers.SwitchedTermRead"
+mode = 5
+
+[[modules.functions]]
+name = "Reclosers.SwitchedTermWrite"
+mode = 6
+
+[[modules.functions]]
+name = "Reclosers.NumFastRead"
+mode = 7
+
+[[modules.functions]]
+name = "Reclosers.NumFastWrite"
+mode = 8
+
+[[modules.functions]]
+name = "Reclosers.ShotsRead"
+mode = 9
+
+[[modules.functions]]
+name = "Reclosers.ShotsWrite"
+mode = 10
+
+[[modules.functions]]
+name = "Reclosers.Close"
+mode = 12
+
+[[modules.functions]]
+name = "Reclosers.IdxRead"
+mode = 13
+
+[[modules.functions]]
+name = "Reclosers.IdxWrite"
+mode = 14
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "ReclosersF"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "double"
+
+[[modules.functions]]
+name = "Reclosers.PhaseTripRead"
+mode = 0
+
+[[modules.functions]]
+name = "Reclosers.PhaseTripWrite"
+mode = 1
+
+[[modules.functions]]
+name = "Reclosers.PhaseInstRead"
+mode = 2
+
+[[modules.functions]]
+name = "Reclosers.PhaseInstWrite"
+mode = 3
+
+[[modules.functions]]
+name = "Reclosers.GroundTripRead"
+mode = 4
+
+[[modules.functions]]
+name = "Reclosers.GroundTripWrite"
+mode = 5
+
+[[modules.functions]]
+name = "Reclosers.GroundInstRead"
+mode = 6
+
+[[modules.functions]]
+name = "Reclosers.GroundInstWrite"
+mode = 7
+
+
+[modules.output]
+type = "double"
+[[modules]]
+name = "ReclosersS"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "Reclosers.NameRead"
+mode = 0
+
+[[modules.functions]]
+name = "Reclosers.NameWrite"
+mode = 1
+
+[[modules.functions]]
+name = "Reclosers.MonitoredObjRead"
+mode = 2
+
+[[modules.functions]]
+name = "Reclosers.MonitoredObjWrite"
+mode = 3
+
+[[modules.functions]]
+name = "Reclosers.SwitchedObjRead"
+mode = 4
+
+[[modules.functions]]
+name = "Reclosers.SwitchedObjWrite"
+mode = 5
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "ReclosersV"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "variant"
+
+[[modules.functions]]
+name = "Reclosers.AllNames"
+mode = 0
+
+[[modules.functions]]
+name = "Reclosers.RecloseIntervals"
+mode = 1
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "RegControlsI"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "RegControls.First"
+mode = 0
+
+[[modules.functions]]
+name = "RegControls.Next"
+mode = 1
+
+[[modules.functions]]
+name = "RegControls.TapWindingRead"
+mode = 2
+
+[[modules.functions]]
+name = "RegControls.TapWindingWrite"
+mode = 3
+
+[[modules.functions]]
+name = "RegControls.WindingRead"
+mode = 4
+
+[[modules.functions]]
+name = "RegControls.WindingWrite"
+mode = 5
+
+[[modules.functions]]
+name = "RegControls.IsReversibleRead"
+mode = 6
+
+[[modules.functions]]
+name = "RegControls.IsReversibleWrite"
+mode = 7
+
+[[modules.functions]]
+name = "RegControls.IsInverseTimeRead"
+mode = 8
+
+[[modules.functions]]
+name = "RegControls.IsInverseTimeWrite"
+mode = 9
+
+[[modules.functions]]
+name = "RegControls.MaxTapChangeRead"
+mode = 10
+
+[[modules.functions]]
+name = "RegControls.MaxTapChangeWrite"
+mode = 11
+
+[[modules.functions]]
+name = "RegControls.Count"
+mode = 12
+
+[[modules.functions]]
+name = "RegControls.TapNumberRead"
+mode = 13
+
+[[modules.functions]]
+name = "RegControls.TapNumberWrite"
+mode = 14
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "RegControlsF"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "double"
+
+[[modules.functions]]
+name = "RegControls.CTPrimaryRead"
+mode = 0
+
+[[modules.functions]]
+name = "RegControls.CTPrimaryWrite"
+mode = 1
+
+[[modules.functions]]
+name = "RegControls.PTRatioRead"
+mode = 2
+
+[[modules.functions]]
+name = "RegControls.PTRatioWrite"
+mode = 3
+
+[[modules.functions]]
+name = "RegControls.ForwardRRead"
+mode = 4
+
+[[modules.functions]]
+name = "RegControls.ForwardRWrite"
+mode = 5
+
+[[modules.functions]]
+name = "RegControls.ForwardXRead"
+mode = 6
+
+[[modules.functions]]
+name = "RegControls.ForwardXWrite"
+mode = 7
+
+[[modules.functions]]
+name = "RegControls.ReverseRRead"
+mode = 8
+
+[[modules.functions]]
+name = "RegControls.ReverseRWrite"
+mode = 9
+
+[[modules.functions]]
+name = "RegControls.ReverseXRead"
+mode = 10
+
+[[modules.functions]]
+name = "RegControls.ReverseXWrite"
+mode = 11
+
+[[modules.functions]]
+name = "RegControls.DelayRead"
+mode = 12
+
+[[modules.functions]]
+name = "RegControls.DelayWrite"
+mode = 13
+
+[[modules.functions]]
+name = "RegControls.TapDelayRead"
+mode = 14
+
+[[modules.functions]]
+name = "RegControls.TapDelayWrite"
+mode = 15
+
+[[modules.functions]]
+name = "RegControls.VoltageLimitRead"
+mode = 16
+
+[[modules.functions]]
+name = "RegControls.VoltageLimitWrite"
+mode = 17
+
+[[modules.functions]]
+name = "RegControls.ForwardBandRead"
+mode = 18
+
+[[modules.functions]]
+name = "RegControls.ForwardBandWrite"
+mode = 19
+
+[[modules.functions]]
+name = "RegControls.ForwardVregRead"
+mode = 20
+
+[[modules.functions]]
+name = "RegControls.ForwardVregWrite"
+mode = 21
+
+[[modules.functions]]
+name = "RegControls.ReverseBandRead"
+mode = 22
+
+[[modules.functions]]
+name = "RegControls.ReverseBandWrite"
+mode = 23
+
+[[modules.functions]]
+name = "RegControls.ReverseVregRead"
+mode = 24
+
+[[modules.functions]]
+name = "RegControls.ReverseVregWrite"
+mode = 25
+
+
+[modules.output]
+type = "double"
+[[modules]]
+name = "RegControlsS"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "RegControls.NameRead"
+mode = 0
+
+[[modules.functions]]
+name = "RegControls.NameWrite"
+mode = 1
+
+[[modules.functions]]
+name = "RegControls.MonitoredBusRead"
+mode = 2
+
+[[modules.functions]]
+name = "RegControls.MonitoredBusWrite"
+mode = 3
+
+[[modules.functions]]
+name = "RegControls.TransformerRead"
+mode = 4
+
+[[modules.functions]]
+name = "RegControls.TransformerWrite"
+mode = 5
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "RegControlsV"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "variant"
+
+[[modules.functions]]
+name = "RegControl.AllNames"
+mode = 0
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "RelaysI"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "Relays.Count"
+mode = 0
+
+[[modules.functions]]
+name = "Relays.First"
+mode = 1
+
+[[modules.functions]]
+name = "Relays.Next"
+mode = 2
+
+[[modules.functions]]
+name = "Relays.MonitoredTermRead"
+mode = 3
+
+[[modules.functions]]
+name = "Relays.MonitoredTermWrite"
+mode = 4
+
+[[modules.functions]]
+name = "Relays.SwitchedTermRead"
+mode = 5
+
+[[modules.functions]]
+name = "Relays.SwitchedTermRead"
+mode = 6
+
+[[modules.functions]]
+name = "Relays.IdxRead"
+mode = 7
+
+[[modules.functions]]
+name = "Relays.IdxWrite"
+mode = 8
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "RelaysS"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "Relays.NameRead"
+mode = 0
+
+[[modules.functions]]
+name = "Relays.NameWrite"
+mode = 1
+
+[[modules.functions]]
+name = "Relays.MonitoredObjRead"
+mode = 2
+
+[[modules.functions]]
+name = "Relays.MonitoredObjWrite"
+mode = 3
+
+[[modules.functions]]
+name = "Relays.SwitchedObjRead"
+mode = 4
+
+[[modules.functions]]
+name = "Relays.SwitchedObjWrite"
+mode = 5
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "RelaysV"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "variant"
+
+[[modules.functions]]
+name = "Relays.AllNames"
+mode = 0
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "SensorsI"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "Sensors.count"
+mode = 0
+
+[[modules.functions]]
+name = "Sensors.First"
+mode = 1
+
+[[modules.functions]]
+name = "Sensors.Next"
+mode = 2
+
+[[modules.functions]]
+name = "Sensors.IsDeltaRead"
+mode = 3
+
+[[modules.functions]]
+name = "Sensors.IsDeltaWrite"
+mode = 4
+
+[[modules.functions]]
+name = "Sensors.ReverseDeltaRead"
+mode = 5
+
+[[modules.functions]]
+name = "Sensors.ReverseDeltaWrite"
+mode = 6
+
+[[modules.functions]]
+name = "Sensors.MeteredTerminalRead"
+mode = 7
+
+[[modules.functions]]
+name = "Sensors.MeteredTerminalWrite"
+mode = 8
+
+[[modules.functions]]
+name = "Sensors.Reset"
+mode = 9
+
+[[modules.functions]]
+name = "Sensors.ResetAll"
+mode = 10
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "SensorsF"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "double"
+
+[[modules.functions]]
+name = "Sensors.PctErrorRead"
+mode = 0
+
+[[modules.functions]]
+name = "Sensors.PctErrorWrite"
+mode = 1
+
+[[modules.functions]]
+name = "Sensors.WeightRead"
+mode = 2
+
+[[modules.functions]]
+name = "Sensors.weightWrite"
+mode = 3
+
+[[modules.functions]]
+name = "Sensors.kVBaseRead"
+mode = 4
+
+[[modules.functions]]
+name = "Sensors.kVBaseWrite"
+mode = 5
+
+
+[modules.output]
+type = "double"
+[[modules]]
+name = "SensorsS"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "Sensors.NameRead"
+mode = 0
+
+[[modules.functions]]
+name = "Sensors.NameWrite"
+mode = 1
+
+[[modules.functions]]
+name = "Sensors.MeteredElementRead"
+mode = 2
+
+[[modules.functions]]
+name = "Sensors.MeteredElementWrite"
+mode = 3
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "SensorsV"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "variant"
+
+[[modules.functions]]
+name = "Sensors.AllNames"
+mode = 0
+
+[[modules.functions]]
+name = "Sensors.CurrentsRead"
+mode = 1
+
+[[modules.functions]]
+name = "Sensors.CurrentsWrite"
+mode = 2
+
+[[modules.functions]]
+name = "Sensors.KVARSRead"
+mode = 3
+
+[[modules.functions]]
+name = "Sensors.KVARSWrite"
+mode = 4
+
+[[modules.functions]]
+name = "Sensors.KWSRead"
+mode = 5
+
+[[modules.functions]]
+name = "Sensors.KWSWrite"
+mode = 6
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "SettingsI"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "Setting.AllowduplicatesRead"
+mode = 0
+
+[[modules.functions]]
+name = "Setting.AllowduplicatesRead"
+mode = 1
+
+[[modules.functions]]
+name = "Settings.ZoneLockRead"
+mode = 2
+
+[[modules.functions]]
+name = "Settings.ZoneLockWrite"
+mode = 3
+
+[[modules.functions]]
+name = "Settings.CktModelRead"
+mode = 4
+
+[[modules.functions]]
+name = "Settings.CktModelWrite"
+mode = 5
+
+[[modules.functions]]
+name = "Settings.TrapezoidalRead"
+mode = 6
+
+[[modules.functions]]
+name = "Settings.TrapezoidalWrite"
+mode = 7
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "SettingsF"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "double"
+
+[[modules.functions]]
+name = "Settings.AllocationFactors"
+mode = 0
+
+[[modules.functions]]
+name = "Settings.NormVminpuRead"
+mode = 1
+
+[[modules.functions]]
+name = "Settings.NormVminpuWrite"
+mode = 2
+
+[[modules.functions]]
+name = "Settings.NormVmaxpuRead"
+mode = 3
+
+[[modules.functions]]
+name = "Settings.NormVmaxpuWrite"
+mode = 4
+
+[[modules.functions]]
+name = "Settings.EmergVminpuRead"
+mode = 5
+
+[[modules.functions]]
+name = "Settings.EmergVminpuWrite"
+mode = 6
+
+[[modules.functions]]
+name = "Settings.EmergVmaxpuRead"
+mode = 7
+
+[[modules.functions]]
+name = "Settings.EmergVmaxpuWrite"
+mode = 8
+
+[[modules.functions]]
+name = "Settings.UEWeightRead"
+mode = 9
+
+[[modules.functions]]
+name = "Settings.UEWeightWrite"
+mode = 10
+
+[[modules.functions]]
+name = "Settings.LossWeightRead"
+mode = 11
+
+[[modules.functions]]
+name = "Settings.LossWeightWrite"
+mode = 12
+
+[[modules.functions]]
+name = "Settings.PriceSignalRead"
+mode = 13
+
+[[modules.functions]]
+name = "Settings.PriceSignalWrite"
+mode = 14
+
+
+[modules.output]
+type = "double"
+[[modules]]
+name = "SettingsS"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "Settings.AutoBusLitsRead"
+mode = 0
+
+[[modules.functions]]
+name = "Settings.AutoBusLitsWrite"
+mode = 1
+
+[[modules.functions]]
+name = "Settings.PriceCurveRead"
+mode = 2
+
+[[modules.functions]]
+name = "Settings.PriceCurveWrite"
+mode = 3
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "SettingsV"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "variant"
+
+[[modules.functions]]
+name = "Settings.UERegsRead"
+mode = 0
+
+[[modules.functions]]
+name = "Settings.UERegsWrite"
+mode = 1
+
+[[modules.functions]]
+name = "Settings.LossRegsWrite"
+mode = 3
+
+[[modules.functions]]
+name = "Settings.VoltageBasesRead"
+mode = 4
+
+[[modules.functions]]
+name = "Settings.VoltageBasesWrite"
+mode = 5
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "SolutionI"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "Solution.solve"
+mode = 0
+
+[[modules.functions]]
+name = "solution.modeRead"
+mode = 1
+
+[[modules.functions]]
+name = "solution.modeWrite"
+mode = 2
+
+[[modules.functions]]
+name = "Solution.hourRead"
+mode = 3
+
+[[modules.functions]]
+name = "Solution.hourWrite"
+mode = 4
+
+[[modules.functions]]
+name = "Solution.YearRead"
+mode = 5
+
+[[modules.functions]]
+name = "Solution.YearWrite"
+mode = 6
+
+[[modules.functions]]
+name = "Solution.Iterations"
+mode = 7
+
+[[modules.functions]]
+name = "Solution.MaxIterationsRead"
+mode = 8
+
+[[modules.functions]]
+name = "Solution.MaxIterationsWrite"
+mode = 9
+
+[[modules.functions]]
+name = "Solution.NumberRead"
+mode = 10
+
+[[modules.functions]]
+name = "Solution.NumberWrite"
+mode = 11
+
+[[modules.functions]]
+name = "Solution.randomRead"
+mode = 12
+
+[[modules.functions]]
+name = "Solution.randomWrite"
+mode = 13
+
+[[modules.functions]]
+name = "Solution.LoadmodelRead"
+mode = 14
+
+[[modules.functions]]
+name = "Solution.LoadModelWrite"
+mode = 15
+
+[[modules.functions]]
+name = "Solution.AddTypeRead"
+mode = 16
+
+[[modules.functions]]
+name = "Solution.AddtypeWrite"
+mode = 17
+
+[[modules.functions]]
+name = "Solution.AlgorithmRead"
+mode = 18
+
+[[modules.functions]]
+name = "Solution.AlgotihmWrite"
+mode = 19
+
+[[modules.functions]]
+name = "Solution.ControlModeRead"
+mode = 20
+
+[[modules.functions]]
+name = "Solution.ControlModeWrite"
+mode = 21
+
+[[modules.functions]]
+name = "Solution.ControlIterationsRead"
+mode = 22
+
+[[modules.functions]]
+name = "Solution.ControlIterationsWrite"
+mode = 23
+
+[[modules.functions]]
+name = "Solution.MaxControlIterationsRead"
+mode = 24
+
+[[modules.functions]]
+name = "Solution.MaxControlIterationsWrite"
+mode = 25
+
+[[modules.functions]]
+name = "Solution.Sample_docontrolactions"
+mode = 26
+
+[[modules.functions]]
+name = "Solution.CheckFaultStatus"
+mode = 27
+
+[[modules.functions]]
+name = "Solution.SolveDirect"
+mode = 28
+
+[[modules.functions]]
+name = "Solution.SolvePFlow"
+mode = 29
+
+[[modules.functions]]
+name = "Solution.SolveNoControl"
+mode = 30
+
+[[modules.functions]]
+name = "Solution.SolvePlusControl"
+mode = 31
+
+[[modules.functions]]
+name = "Solution.InitSnap"
+mode = 32
+
+[[modules.functions]]
+name = "Solution.CheckControls"
+mode = 33
+
+[[modules.functions]]
+name = "Solution.SampleControlDevices"
+mode = 34
+
+[[modules.functions]]
+name = "Solution.DoControlActions"
+mode = 35
+
+[[modules.functions]]
+name = "Solution.BuildYMatrix"
+mode = 36
+
+[[modules.functions]]
+name = "Solution.SystemYChanged"
+mode = 37
+
+[[modules.functions]]
+name = "Solution.convergedRead"
+mode = 38
+
+[[modules.functions]]
+name = "Solution.convergedWrite"
+mode = 39
+
+[[modules.functions]]
+name = "Solution.TotalIterations"
+mode = 40
+
+[[modules.functions]]
+name = "Solution.MostIterationsDone"
+mode = 41
+
+[[modules.functions]]
+name = "Solution.ControlActionsDoneRead"
+mode = 42
+
+[[modules.functions]]
+name = "Solution.ControlActionsDoneWrite"
+mode = 43
+
+[[modules.functions]]
+name = "Solution.FInishTimeStep"
+mode = 44
+
+[[modules.functions]]
+name = "Solution.cleanup"
+mode = 45
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "SolutionF"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "double"
+
+[[modules.functions]]
+name = "Solution.FrequencyRead"
+mode = 0
+
+[[modules.functions]]
+name = "Solution.FrequencyWrite"
+mode = 1
+
+[[modules.functions]]
+name = "Solution.SecondsRead"
+mode = 2
+
+[[modules.functions]]
+name = "Solution.SecondsWrite"
+mode = 3
+
+[[modules.functions]]
+name = "Solution.StepsizeRead"
+mode = 4
+
+[[modules.functions]]
+name = "Solution.StepSizeWrite"
+mode = 5
+
+[[modules.functions]]
+name = "Solution.LoadMultRead"
+mode = 6
+
+[[modules.functions]]
+name = "Solution.LoadMultWrite"
+mode = 7
+
+[[modules.functions]]
+name = "Solution.ConvergenceRead"
+mode = 8
+
+[[modules.functions]]
+name = "Solution.ConvergenceWrite"
+mode = 9
+
+[[modules.functions]]
+name = "Solution.pctgrowthRead"
+mode = 10
+
+[[modules.functions]]
+name = "Solution.pctGrowthWrite"
+mode = 11
+
+[[modules.functions]]
+name = "Solution.GenkWRead"
+mode = 12
+
+[[modules.functions]]
+name = "Solution.GenkWWrite"
+mode = 13
+
+[[modules.functions]]
+name = "Solution.GenPFRead"
+mode = 14
+
+[[modules.functions]]
+name = "Solution.GenPFWrite"
+mode = 15
+
+[[modules.functions]]
+name = "Solution.CapkvarRead"
+mode = 16
+
+[[modules.functions]]
+name = "Solution.CapkvarWrite"
+mode = 17
+
+[[modules.functions]]
+name = "Solution.GenMultRead"
+mode = 18
+
+[[modules.functions]]
+name = "Solution.GenMultWrite"
+mode = 19
+
+[[modules.functions]]
+name = "Solution.dblHourRead"
+mode = 20
+
+[[modules.functions]]
+name = "Solution.dblHourWrite"
+mode = 21
+
+[[modules.functions]]
+name = "Solution.StepSizeMin"
+mode = 22
+
+[[modules.functions]]
+name = "Solution.StepSizeHr"
+mode = 23
+
+[[modules.functions]]
+name = "Solution.Process_Time"
+mode = 24
+
+[[modules.functions]]
+name = "Solution.Total_TimeRead"
+mode = 25
+
+[[modules.functions]]
+name = "Solution.Total_TimeWrite"
+mode = 26
+
+[[modules.functions]]
+name = "Solution.Time_TimeStep"
+mode = 27
+
+
+[modules.output]
+type = "double"
+[[modules]]
+name = "SolutionS"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "Solution.ModeID"
+mode = 0
+
+[[modules.functions]]
+name = "Solution.LDCurveRead"
+mode = 1
+
+[[modules.functions]]
+name = "Solution.LDCurveWrite"
+mode = 2
+
+[[modules.functions]]
+name = "Solution.DefaultDailyRead"
+mode = 3
+
+[[modules.functions]]
+name = "Solution.DefaultDailyWrite"
+mode = 4
+
+[[modules.functions]]
+name = "Solution.DefaultYearlyRead"
+mode = 5
+
+[[modules.functions]]
+name = "Solution.DefaultYearlyWrite"
+mode = 6
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "SolutionV"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "Variant"
+
+[[modules.functions]]
+name = "Solution.EventLog"
+mode = 0
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "SwtControlsI"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "SwtControls.First"
+mode = 0
+
+[[modules.functions]]
+name = "SwtControls.Next"
+mode = 1
+
+[[modules.functions]]
+name = "SwtControls.ActionRead"
+mode = 2
+
+[[modules.functions]]
+name = "SwtControls.ActionWrite"
+mode = 3
+
+[[modules.functions]]
+name = "Resetmeanstheshelfstate"
+mode = 3
+
+[[modules.functions]]
+name = "SwtControls.IsLockedRead"
+mode = 4
+
+[[modules.functions]]
+name = "SwtControls.IsLockedWrite"
+mode = 5
+
+[[modules.functions]]
+name = "SwtControls.SwitchedTermRead"
+mode = 6
+
+[[modules.functions]]
+name = "SwtControls.Count"
+mode = 8
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "SwtControlsF"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "double"
+
+[[modules.functions]]
+name = "SwtControls.DelayRead"
+mode = 0
+
+[[modules.functions]]
+name = "SwtControls.DelayWrite"
+mode = 1
+
+
+[modules.output]
+type = "double"
+[[modules]]
+name = "SwtControlsS"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "SwtControls.NameRead"
+mode = 0
+
+[[modules.functions]]
+name = "SwtControls.NameWrite"
+mode = 1
+
+[[modules.functions]]
+name = "SwtControl.SwitchedObjRead"
+mode = 2
+
+[[modules.functions]]
+name = "SwtControl.SwitchedObjWrite"
+mode = 3
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "SwtControlsV"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "variant"
+
+[[modules.functions]]
+name = "SwtControls.AllNames"
+mode = 0
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "DSSPut_Command"
+exported = true
+functions = []
+[[modules.input]]
+name = "a"
+type = "PAnsiChar"
+
+
+[modules.output]
+type = "PAnsiChar"
+[[modules]]
+name = "TopologyI"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "Topology.NumLoops"
+mode = 0
+
+[[modules.functions]]
+name = "Topology.NumIsolatedBranches"
+mode = 1
+
+[[modules.functions]]
+name = "Topology.NumIsolatedLoads"
+mode = 2
+
+[[modules.functions]]
+name = "Topology.First"
+mode = 3
+
+[[modules.functions]]
+name = "Topology.Next"
+mode = 4
+
+[[modules.functions]]
+name = "Topology.ActiveBranch"
+mode = 5
+
+[[modules.functions]]
+name = "Topology.ForwardBranch"
+mode = 6
+
+[[modules.functions]]
+name = "Topology.BackwardBranch"
+mode = 7
+
+[[modules.functions]]
+name = "Topology.LoopedBranch"
+mode = 8
+
+[[modules.functions]]
+name = "Topology.ParallelBranch"
+mode = 9
+
+[[modules.functions]]
+name = "Topology.FirstLoad"
+mode = 10
+
+[[modules.functions]]
+name = "Topology.NextLoad"
+mode = 11
+
+[[modules.functions]]
+name = "Topology.ActiveLevel"
+mode = 12
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "TopologyS"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "Topology.BranchNameRead"
+mode = 0
+
+[[modules.functions]]
+name = "Topology.BranchNameWrite"
+mode = 1
+
+[[modules.functions]]
+name = "Topology.BusNameRead"
+mode = 2
+
+[[modules.functions]]
+name = "Topology.BusNameWrite"
+mode = 3
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "TopologyV"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "variant"
+
+[[modules.functions]]
+name = "Topology.AllLoopedPairs"
+mode = 0
+
+[[modules.functions]]
+name = "Topology.AllIsolatedBranches"
+mode = 1
+
+[[modules.functions]]
+name = "Topology.AllIsolatedLoads"
+mode = 2
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "TransformersI"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "Transformers.NumWindingsRead"
+mode = 0
+
+[[modules.functions]]
+name = "Transformers.NumWindingsWrite"
+mode = 1
+
+[[modules.functions]]
+name = "Transformers.WdgRead"
+mode = 2
+
+[[modules.functions]]
+name = "Transformers.WdgWrite"
+mode = 3
+
+[[modules.functions]]
+name = "Transformers.NumTapsRead"
+mode = 4
+
+[[modules.functions]]
+name = "Transformers.NumTapsWrite"
+mode = 5
+
+[[modules.functions]]
+name = "Transformers.IsDeltaRead"
+mode = 6
+
+[[modules.functions]]
+name = "Transformers.IsDeltaWrite"
+mode = 7
+
+[[modules.functions]]
+name = "Transformers.First"
+mode = 8
+
+[[modules.functions]]
+name = "Transformers.Next"
+mode = 9
+
+[[modules.functions]]
+name = "Transformers.Count"
+mode = 10
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "TransformersF"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "double"
+
+[[modules.functions]]
+name = "Transformers.RRead"
+mode = 0
+
+[[modules.functions]]
+name = "Transformers.RWrite"
+mode = 1
+
+[[modules.functions]]
+name = "Transformers.TapRead"
+mode = 2
+
+[[modules.functions]]
+name = "Transformers.TapWrite"
+mode = 3
+
+[[modules.functions]]
+name = "Transformers.MinTapRead"
+mode = 4
+
+[[modules.functions]]
+name = "Transformers.MinTapWrite"
+mode = 5
+
+[[modules.functions]]
+name = "Transformers.MaxTapRead"
+mode = 6
+
+[[modules.functions]]
+name = "Transformers.MaxTapWrite"
+mode = 7
+
+[[modules.functions]]
+name = "Transformers.kVRead"
+mode = 8
+
+[[modules.functions]]
+name = "Transformers.kVWrite"
+mode = 9
+
+[[modules.functions]]
+name = "Transformers.kVARead"
+mode = 10
+
+[[modules.functions]]
+name = "Transformers.kVAWrite"
+mode = 11
+
+[[modules.functions]]
+name = "Transformers.XneutRead"
+mode = 12
+
+[[modules.functions]]
+name = "Transformers.XneutWrite"
+mode = 13
+
+[[modules.functions]]
+name = "Transformers.RneutRead"
+mode = 14
+
+[[modules.functions]]
+name = "Transformers.RneutWrite"
+mode = 15
+
+[[modules.functions]]
+name = "Transformers.XhlRead"
+mode = 16
+
+[[modules.functions]]
+name = "Transformers.XhlWrite"
+mode = 17
+
+[[modules.functions]]
+name = "Transformers.XhtRead"
+mode = 18
+
+[[modules.functions]]
+name = "Transformers.XhtWrite"
+mode = 19
+
+[[modules.functions]]
+name = "Transformers.XltRead"
+mode = 20
+
+[[modules.functions]]
+name = "Transformers.XltWrite"
+mode = 21
+
+
+[modules.output]
+type = "double"
+[[modules]]
+name = "TransformersS"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "Transformers.XfmrCodeRead"
+mode = 0
+
+[[modules.functions]]
+name = "Transformers.XfmrCodeWrite"
+mode = 1
+
+[[modules.functions]]
+name = "Transformers.NameRead"
+mode = 2
+
+[[modules.functions]]
+name = "Transformers.NameWrite"
+mode = 3
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "TransformersV"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "variant"
+
+[[modules.functions]]
+name = "Transformers.AllNames"
+mode = 0
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "VsourcesI"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "Vsource.Count"
+mode = 0
+
+[[modules.functions]]
+name = "Vsource.First"
+mode = 1
+
+[[modules.functions]]
+name = "Vsource.Next"
+mode = 2
+
+[[modules.functions]]
+name = "Vsource.PhasesRead"
+mode = 3
+
+[[modules.functions]]
+name = "Vsource.PhasesWrite"
+mode = 4
+
+
+[modules.output]
+type = "Longint"
+[[modules]]
+name = "VsourcesF"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "double"
+
+[[modules.functions]]
+name = "Vsources.basekVRead"
+mode = 0
+
+[[modules.functions]]
+name = "Vsources.basekVWrite"
+mode = 1
+
+[[modules.functions]]
+name = "Vsource.puRead"
+mode = 2
+
+[[modules.functions]]
+name = "Vsource.puWrite"
+mode = 3
+
+[[modules.functions]]
+name = "Vsource.AngledegRead"
+mode = 4
+
+[[modules.functions]]
+name = "Vsource.AngledegWrite"
+mode = 5
+
+[[modules.functions]]
+name = "Vsource.FrequencyRead"
+mode = 6
+
+[[modules.functions]]
+name = "Vsource.FrequencyWrite"
+mode = 7
+
+
+[modules.output]
+type = "double"
+[[modules]]
+name = "VsourcesS"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "Vsources.NameRead"
+mode = 0
+
+[[modules.functions]]
+name = "Vsources.NameWrite"
+mode = 1
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "VsourcesV"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "variant"
+
+[[modules.functions]]
+name = "VSources.AllNames"
+mode = 0
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "XYCurvesI"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "XYCurves.Count"
+mode = 0
+
+[[modules.functions]]
+name = "XYCurves.Next"
+mode = 2
+
+[[modules.functions]]
+name = "XYCurves.NptsRead"
+mode = 3
+
+[[modules.functions]]
+name = "XYCurves.NptsWrite"
+mode = 4
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "XYCurvesF"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "double"
+
+[[modules.functions]]
+name = "XYCurve.XRead"
+mode = 0
+
+[[modules.functions]]
+name = "XYCurve.XWrite"
+mode = 1
+
+[[modules.functions]]
+name = "XYCurve.YRead"
+mode = 2
+
+[[modules.functions]]
+name = "XYCurve.YWrite"
+mode = 3
+
+[[modules.functions]]
+name = "XYCurve.XShiftRead"
+mode = 4
+
+[[modules.functions]]
+name = "XYCurve.XShiftWrite"
+mode = 5
+
+[[modules.functions]]
+name = "XYCurve.YShiftRead"
+mode = 6
+
+[[modules.functions]]
+name = "XYCurve.YShiftWrite"
+mode = 7
+
+[[modules.functions]]
+name = "XYCurve.XScaleRead"
+mode = 8
+
+[[modules.functions]]
+name = "XYCurve.XScaleWrite"
+mode = 9
+
+[[modules.functions]]
+name = "XYCurve.YScaleRead"
+mode = 10
+
+[[modules.functions]]
+name = "XYCurve.YScaleWrite"
+mode = 11
+
+
+[modules.output]
+type = "double"
+[[modules]]
+name = "XYCurvesS"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "pAnsiChar"
+
+[[modules.functions]]
+name = "XYCurve.NameRead"
+mode = 0
+
+[[modules.functions]]
+name = "XYCurve.NameWrite"
+mode = 1
+
+
+[modules.output]
+type = "pAnsiChar"
+[[modules]]
+name = "XYCurvesV"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "variant"
+
+[[modules.functions]]
+name = "XYCurve.XArrayRead"
+mode = 0
+
+[[modules.functions]]
+name = "XYCurve.XArrayWrite"
+mode = 1
+
+[[modules.functions]]
+name = "XYCurve.YArrayRead"
+mode = 2
+
+[[modules.functions]]
+name = "XYCurve.YArrayWrite"
+mode = 3
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "InitAndGetYparams"
+exported = true
+functions = []
+[[modules.input]]
+name = "hY"
+type = "NativeUInt"
+
+[[modules.input]]
+name = "nBus"
+type = "LongWord"
+
+[[modules.input]]
+name = "nNZ"
+type = "LongWord"
+
+
+[modules.output]
+type = "Longword"
+[[modules]]
+name = "GetCompressedYMatrix"
+exported = true
+functions = []
+[[modules.input]]
+name = "hY"
+type = "NativeUInt"
+
+[[modules.input]]
+name = "nBus"
+type = "Longword"
+
+[[modules.input]]
+name = "nNz"
+type = "Longword"
+
+[[modules.input]]
+name = "ColPtr"
+type = "pIntegerArray"
+
+[[modules.input]]
+name = "RowIdx"
+type = "pIntegerArray"
+
+[[modules.input]]
+name = "cVals"
+type = "pComplexArray"
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "ZeroInjCurr"
+input = []
+exported = true
+functions = []
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "GetSourceInjCurrents"
+input = []
+exported = true
+functions = []
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "GetPCInjCurr"
+input = []
+exported = true
+functions = []
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "SystemYChanged"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "Write"
+mode = 1
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "BuildYMatrixD"
+exported = true
+functions = []
+[[modules.input]]
+name = "BuildOps"
+type = "longint"
+
+[[modules.input]]
+name = "AllocateVI"
+type = "longint"
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "UseAuxCurrents"
+exported = true
+[[modules.input]]
+name = "mode"
+type = "longint"
+
+[[modules.input]]
+name = "arg"
+type = "longint"
+
+[[modules.functions]]
+name = "Write"
+mode = 1
+
+
+[modules.output]
+type = "longint"
+[[modules]]
+name = "AddInAuxCurrents"
+exported = true
+functions = []
+[[modules.input]]
+name = "SType"
+type = "integer"
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "getIpointer"
+exported = true
+functions = []
+[[modules.input]]
+name = "IvectorPtr"
+type = "pNodeVarray"
+
+
+[modules.output]
+type = "void"
+[[modules]]
+name = "getVpointer"
+exported = true
+functions = []
+[[modules.input]]
+name = "VvectorPtr"
+type = "pNodeVarray"
+
+
+[modules.output]
+type = "void"
