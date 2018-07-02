@@ -33,7 +33,7 @@ function DSSElementV(mode: longint; out arg:variant);cdecl;
 function DSSExecutiveI(mode:longint; arg:longint):longint;cdecl;
 function DSSExecutiveS(mode:longint; arg:pAnsiChar):pAnsiChar;cdecl;
 function DSSI(mode:longint;arg:longint):longint;cdecl;
-function DSSLoads(mode:longint; arg:longint):longint; cdecl;
+function DSSLoads(mode:longint; arg: longint):longint; cdecl;
 function DSSLoadsF(mode:longint; arg:double):double; cdecl;
 function DSSLoadsS(mode:longint; arg:pAnsiChar):pAnsiChar; cdecl;
 function DSSLoadsV(mode:longint; out arg:variant); cdecl;

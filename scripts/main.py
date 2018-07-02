@@ -28,9 +28,9 @@ def generate_headers():
             data = f.read()
             for l in data.splitlines():
                 if l.strip().lower().startswith("interface"):
-                    read_lines = True
-                if l.strip().lower().startswith("implementation"):
                     read_lines = False
+                if l.strip().lower().startswith("implementation"):
+                    read_lines = True
                 if read_lines is True and "cdecl" in l:
                     l = l.replace("Function", "function").replace("procedure", "function").replace("Procedure", "function").replace("  ", " ")
                     l = l.split("//")[0].strip()
@@ -144,13 +144,20 @@ def generate_c_headers():
 
     with open(os.path.join(current_directory, "../opendssdirect.h"), "w") as f:
 
-        f.write("""#include "stdint.h"\n""")
-        f.write("\n")
+        # f.write("""#include "stdint.h"\n""")
+        # f.write("\n")
         for k, v in typedefs.items():
             f.write("typedef {} {};\n".format(v, k))
 
         f.write("\n")
         f.write("\n".join(c_headers))
+
+
+@cli.command()
+def generate_interface():
+
+    pass
+
 
 
 if __name__ == "__main__":

@@ -1,5 +1,3 @@
-#include "stdint.h"
-
 typedef double DOUBLE;
 typedef int INTEGER;
 typedef int32_t LONGINT;
