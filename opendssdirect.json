@@ -1088,38 +1088,6 @@
         ]
     },
     {
-        "name":"LineCodesF",
-        "output":{
-            "type":"double"
-        },
-        "input":[
-            {
-                "name":"mode",
-                "type":"longint"
-            },
-            {
-                "name":"arg",
-                "type":"double"
-            }
-        ]
-    },
-    {
-        "name":"LineCodesI",
-        "output":{
-            "type":"longint"
-        },
-        "input":[
-            {
-                "name":"mode",
-                "type":"longint"
-            },
-            {
-                "name":"arg",
-                "type":"longint"
-            }
-        ]
-    },
-    {
         "name":"LineCodesI",
         "output":{
             "type":"longint"
@@ -1152,22 +1120,6 @@
         ]
     },
     {
-        "name":"LineCodesS",
-        "output":{
-            "type":"pAnsiChar"
-        },
-        "input":[
-            {
-                "name":"mode",
-                "type":"longint"
-            },
-            {
-                "name":"arg",
-                "type":"pAnsiChar"
-            }
-        ]
-    },
-    {
         "name":"LineCodesV",
         "output":{
             "type":"void"
@@ -1180,38 +1132,6 @@
             {
                 "name":"arg",
                 "type":"variant"
-            }
-        ]
-    },
-    {
-        "name":"LineCodesV",
-        "output":{
-            "type":"void"
-        },
-        "input":[
-            {
-                "name":"mode",
-                "type":"longint"
-            },
-            {
-                "name":"arg",
-                "type":"variant"
-            }
-        ]
-    },
-    {
-        "name":"LinesF",
-        "output":{
-            "type":"double"
-        },
-        "input":[
-            {
-                "name":"mode",
-                "type":"longint"
-            },
-            {
-                "name":"arg",
-                "type":"double"
             }
         ]
     },
@@ -1260,38 +1180,6 @@
             {
                 "name":"arg",
                 "type":"pAnsiChar"
-            }
-        ]
-    },
-    {
-        "name":"LinesS",
-        "output":{
-            "type":"pAnsiChar"
-        },
-        "input":[
-            {
-                "name":"mode",
-                "type":"longint"
-            },
-            {
-                "name":"arg",
-                "type":"pAnsiChar"
-            }
-        ]
-    },
-    {
-        "name":"LinesV",
-        "output":{
-            "type":"void"
-        },
-        "input":[
-            {
-                "name":"mode",
-                "type":"longint"
-            },
-            {
-                "name":"arg",
-                "type":"variant"
             }
         ]
     },
