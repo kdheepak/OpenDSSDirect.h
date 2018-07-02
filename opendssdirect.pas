@@ -97,7 +97,7 @@ function PVsystemsV(mode:longint;out arg:variant);cdecl;
 function ParserF(mode: longint; arg:double):double;cdecl;
 function ParserI(mode: longint; arg:longint):longint;cdecl;
 function ParserS(mode: longint; arg:pAnsiChar):pAnsiChar;cdecl;
-function ParserV(mode: longint; var arg:variant);cdecl; // sometimes ParserV uses the input arg value
+function ParserV(mode: longint; var arg:variant);cdecl;
 function ReclosersF(mode:longint;arg:double):double;cdecl;
 function ReclosersI(mode:longint;arg:longint):longint;cdecl;
 function ReclosersS(mode:longint;arg:pAnsiChar):pAnsiChar;cdecl;

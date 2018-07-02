@@ -23,6 +23,7 @@ def main():
                     read_lines = False
                 if read_lines is True and "cdecl" in l:
                     l = l.replace("Function", "function").replace("procedure", "function").replace("Procedure", "function").replace("  ", " ")
+                    l = l.split("//")[0].strip()
                     func_sigs.append(l)
 
     func_sigs = sorted(func_sigs)
