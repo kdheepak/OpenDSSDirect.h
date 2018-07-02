@@ -40,7 +40,7 @@ def parse_headers():
     for l in data.splitlines():
 
         # get function name
-        function_name = l.split("(")[0].strip("function ")
+        function_name = l.split("(")[0].strip("function ").replace("cdecl", "").replace(";", "").strip()
 
         # get output type
         if "(" not in l and ")" not in l:
@@ -78,4 +78,4 @@ def parse_headers():
 
 
 if __name__ == "__main__":
-    generate_headers()
+    parse_headers()

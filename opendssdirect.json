@@ -910,7 +910,7 @@
                 "type":"Longword"
             },
             {
-                "name":"Var ColPtr",
+                "name":"ColPtr",
                 "type":"pIntegerArray"
             },
             {
@@ -918,13 +918,13 @@
                 "type":"pIntegerArray"
             },
             {
-                "name":"Var cVals",
+                "name":"cVals",
                 "type":"pComplexArray"
             }
         ]
     },
     {
-        "name":"GetPCInjCurr; cdecl;",
+        "name":"GetPCInjCurr",
         "output":{
             "type":"void"
         },
@@ -942,7 +942,7 @@
                 "type":"Longword"
             },
             {
-                "name":"Var ColPtr",
+                "name":"ColPtr",
                 "type":"pIntegerArray"
             },
             {
@@ -950,13 +950,13 @@
                 "type":"pIntegerArray"
             },
             {
-                "name":"Var cVals",
+                "name":"cVals",
                 "type":"pComplexArray"
             }
         ]
     },
     {
-        "name":"GetSourceInjCurrents; cdecl;",
+        "name":"GetSourceInjCurrents",
         "output":{
             "type":"void"
         },
@@ -974,7 +974,7 @@
                 "type":"Longword"
             },
             {
-                "name":"Var ColPtr",
+                "name":"ColPtr",
                 "type":"pIntegerArray"
             },
             {
@@ -982,7 +982,7 @@
                 "type":"pIntegerArray"
             },
             {
-                "name":"Var cVals",
+                "name":"cVals",
                 "type":"pComplexArray"
             }
         ]
@@ -2380,7 +2380,7 @@
         ]
     },
     {
-        "name":"ZeroInjCurr; cdecl;",
+        "name":"ZeroInjCurr",
         "output":{
             "type":"void"
         },
