@@ -40,7 +40,7 @@ def parse_headers():
     for l in data.splitlines():
 
         # get function name
-        name = l.split("(")[0].strip("function ")
+        function_name = l.split("(")[0].strip("function ")
 
         # get output type
         if "(" not in l and ")" not in l:
@@ -62,11 +62,11 @@ def parse_headers():
                 # only a single argument
                 arg_names, arg_type = arg.split(":")
                 for arg_name in arg_names.split(","):
-                    d = {"name": arg_name.strip().replace("var ", "").replace("out ", ""), "type": arg_type.strip()}
+                    d = {"name": arg_name.strip().replace("var ", "").replace("Var ", "").replace("out ", "").strip(), "type": arg_type.strip()}
                     arguments.append(d)
 
         function_definition = {
-            "name": name,
+            "name": function_name,
             "output": {"type": output_type},
             "input": arguments
         }
