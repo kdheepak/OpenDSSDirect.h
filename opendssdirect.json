@@ -13,7 +13,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"ActiveClassS",
@@ -29,7 +30,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"ActiveClassV",
@@ -45,7 +47,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"AddInAuxCurrents",
@@ -57,7 +60,8 @@
                 "name":"SType",
                 "type":"integer"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"BUSF",
@@ -73,7 +77,8 @@
                 "name":"arg",
                 "type":"double"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"BUSI",
@@ -89,7 +94,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"BUSS",
@@ -105,7 +111,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"BUSV",
@@ -121,7 +128,8 @@
                 "name":"arg",
                 "type":"Variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"BuildYMatrixD",
@@ -137,7 +145,8 @@
                 "name":"AllocateVI",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"CapControlsF",
@@ -153,7 +162,8 @@
                 "name":"arg",
                 "type":"double"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"CapControlsI",
@@ -169,7 +179,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"CapControlsS",
@@ -185,7 +196,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"CapControlsV",
@@ -201,7 +213,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"CapacitorsF",
@@ -217,7 +230,8 @@
                 "name":"arg",
                 "type":"double"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"CapacitorsI",
@@ -233,7 +247,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"CapacitorsS",
@@ -249,7 +264,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"CapacitorsV",
@@ -265,7 +281,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"CircuitF",
@@ -285,7 +302,8 @@
                 "name":"arg2",
                 "type":"double"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"CircuitI",
@@ -301,7 +319,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"CircuitS",
@@ -317,7 +336,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"CircuitV",
@@ -337,7 +357,8 @@
                 "name":"arg2",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"CktElementF",
@@ -353,7 +374,8 @@
                 "name":"arg",
                 "type":"double"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"CktElementI",
@@ -369,7 +391,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"CktElementS",
@@ -385,7 +408,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"CktElementV",
@@ -401,7 +425,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"CmathLibF",
@@ -421,7 +446,8 @@
                 "name":"arg2",
                 "type":"double"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"CmathLibV",
@@ -445,7 +471,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"CtrlQueueI",
@@ -461,7 +488,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":false
     },
     {
         "name":"CtrlQueueV",
@@ -477,7 +505,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":false
     },
     {
         "name":"DSSElementI",
@@ -493,7 +522,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"DSSElementS",
@@ -509,7 +539,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"DSSElementV",
@@ -525,7 +556,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"DSSExecutiveI",
@@ -541,7 +573,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"DSSExecutiveS",
@@ -557,7 +590,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"DSSI",
@@ -573,7 +607,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"DSSLoads",
@@ -589,7 +624,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"DSSLoadsF",
@@ -605,7 +641,8 @@
                 "name":"arg",
                 "type":"double"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"DSSLoadsS",
@@ -621,7 +658,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"DSSLoadsV",
@@ -637,7 +675,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"DSSProgressI",
@@ -653,7 +692,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":false
     },
     {
         "name":"DSSProgressS",
@@ -669,7 +709,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":false
     },
     {
         "name":"DSSProperties",
@@ -685,7 +726,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"DSSPut_Command",
@@ -697,7 +739,8 @@
                 "name":"a",
                 "type":"PAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"DSSS",
@@ -713,7 +756,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"DSSV",
@@ -729,7 +773,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"ErrorCode",
@@ -745,7 +790,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"ErrorDes",
@@ -761,7 +807,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":false
     },
     {
         "name":"FusesF",
@@ -777,7 +824,8 @@
                 "name":"arg",
                 "type":"double"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"FusesI",
@@ -793,7 +841,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"FusesS",
@@ -809,7 +858,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"FusesV",
@@ -825,7 +875,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"GeneratorsF",
@@ -841,7 +892,8 @@
                 "name":"arg",
                 "type":"double"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"GeneratorsI",
@@ -857,7 +909,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"GeneratorsS",
@@ -873,7 +926,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"GeneratorsV",
@@ -889,7 +943,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"GetCompressedYMatrix",
@@ -921,7 +976,8 @@
                 "name":"cVals",
                 "type":"pComplexArray"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"GetPCInjCurr",
@@ -953,7 +1009,8 @@
                 "name":"cVals",
                 "type":"pComplexArray"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"GetSourceInjCurrents",
@@ -985,7 +1042,8 @@
                 "name":"cVals",
                 "type":"pComplexArray"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"InitAndGetYparams",
@@ -1005,7 +1063,8 @@
                 "name":"nNZ",
                 "type":"LongWord"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"IsourceF",
@@ -1021,7 +1080,8 @@
                 "name":"arg",
                 "type":"double"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"IsourceI",
@@ -1037,7 +1097,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"IsourceS",
@@ -1053,7 +1114,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"IsourceV",
@@ -1069,7 +1131,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"LineCodesF",
@@ -1085,7 +1148,8 @@
                 "name":"arg",
                 "type":"double"
             }
-        ]
+        ],
+        "exported":false
     },
     {
         "name":"LineCodesI",
@@ -1101,7 +1165,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":false
     },
     {
         "name":"LineCodesS",
@@ -1117,7 +1182,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":false
     },
     {
         "name":"LineCodesV",
@@ -1133,7 +1199,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":false
     },
     {
         "name":"LinesF",
@@ -1149,7 +1216,8 @@
                 "name":"arg",
                 "type":"double"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"LinesI",
@@ -1165,7 +1233,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"LinesS",
@@ -1181,7 +1250,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"LinesV",
@@ -1197,7 +1267,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"LoadShapeF",
@@ -1213,7 +1284,8 @@
                 "name":"arg",
                 "type":"double"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"LoadShapeI",
@@ -1229,7 +1301,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"LoadShapeS",
@@ -1245,7 +1318,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"LoadShapeV",
@@ -1261,7 +1335,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"MetersF",
@@ -1277,7 +1352,8 @@
                 "name":"arg",
                 "type":"double"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"MetersI",
@@ -1293,7 +1369,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"MetersS",
@@ -1309,7 +1386,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"MetersV",
@@ -1325,7 +1403,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"MonitorsI",
@@ -1341,7 +1420,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"MonitorsS",
@@ -1357,7 +1437,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"MonitorsV",
@@ -1373,7 +1454,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"PDElementsF",
@@ -1389,7 +1471,8 @@
                 "name":"arg",
                 "type":"double"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"PDElementsI",
@@ -1405,7 +1488,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"PDElementsS",
@@ -1421,7 +1505,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"PVsystemsF",
@@ -1437,7 +1522,8 @@
                 "name":"arg",
                 "type":"double"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"PVsystemsI",
@@ -1453,7 +1539,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"PVsystemsS",
@@ -1469,7 +1556,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"PVsystemsV",
@@ -1485,7 +1573,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"ParserF",
@@ -1501,7 +1590,8 @@
                 "name":"arg",
                 "type":"double"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"ParserI",
@@ -1517,7 +1607,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"ParserS",
@@ -1533,7 +1624,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"ParserV",
@@ -1549,7 +1641,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"ReclosersF",
@@ -1565,7 +1658,8 @@
                 "name":"arg",
                 "type":"double"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"ReclosersI",
@@ -1581,7 +1675,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"ReclosersS",
@@ -1597,7 +1692,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"ReclosersV",
@@ -1613,7 +1709,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"RegControlsF",
@@ -1629,7 +1726,8 @@
                 "name":"arg",
                 "type":"double"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"RegControlsI",
@@ -1645,7 +1743,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"RegControlsS",
@@ -1661,7 +1760,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"RegControlsV",
@@ -1677,7 +1777,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"RelaysI",
@@ -1693,7 +1794,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"RelaysS",
@@ -1709,7 +1811,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"RelaysV",
@@ -1725,7 +1828,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"SensorsF",
@@ -1741,7 +1845,8 @@
                 "name":"arg",
                 "type":"double"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"SensorsI",
@@ -1757,7 +1862,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"SensorsS",
@@ -1773,7 +1879,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"SensorsV",
@@ -1789,7 +1896,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"SettingsF",
@@ -1805,7 +1913,8 @@
                 "name":"arg",
                 "type":"double"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"SettingsI",
@@ -1821,7 +1930,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"SettingsS",
@@ -1837,7 +1947,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"SettingsV",
@@ -1853,7 +1964,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"SolutionF",
@@ -1869,7 +1981,8 @@
                 "name":"arg",
                 "type":"double"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"SolutionI",
@@ -1885,7 +1998,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"SolutionS",
@@ -1901,7 +2015,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"SolutionV",
@@ -1917,7 +2032,8 @@
                 "name":"arg",
                 "type":"Variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"SolveSystem",
@@ -1929,7 +2045,8 @@
                 "name":"NodeV",
                 "type":"pNodeVarray"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"SwtControlsF",
@@ -1945,7 +2062,8 @@
                 "name":"arg",
                 "type":"double"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"SwtControlsI",
@@ -1961,7 +2079,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"SwtControlsS",
@@ -1977,7 +2096,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"SwtControlsV",
@@ -1993,7 +2113,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"SystemYChanged",
@@ -2009,7 +2130,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"TopologyI",
@@ -2025,7 +2147,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"TopologyS",
@@ -2041,7 +2164,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"TopologyV",
@@ -2057,7 +2181,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"TransformersF",
@@ -2073,7 +2198,8 @@
                 "name":"arg",
                 "type":"double"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"TransformersI",
@@ -2089,7 +2215,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"TransformersS",
@@ -2105,7 +2232,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"TransformersV",
@@ -2121,7 +2249,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"UseAuxCurrents",
@@ -2137,7 +2266,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"VsourcesF",
@@ -2153,7 +2283,8 @@
                 "name":"arg",
                 "type":"double"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"VsourcesI",
@@ -2169,7 +2300,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"VsourcesS",
@@ -2185,7 +2317,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"VsourcesV",
@@ -2201,7 +2334,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"XYCurvesF",
@@ -2217,7 +2351,8 @@
                 "name":"arg",
                 "type":"double"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"XYCurvesI",
@@ -2233,7 +2368,8 @@
                 "name":"arg",
                 "type":"longint"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"XYCurvesS",
@@ -2249,7 +2385,8 @@
                 "name":"arg",
                 "type":"pAnsiChar"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"XYCurvesV",
@@ -2265,7 +2402,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"ZeroInjCurr",
@@ -2281,7 +2419,8 @@
                 "name":"arg",
                 "type":"variant"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"getIpointer",
@@ -2293,7 +2432,8 @@
                 "name":"IvectorPtr",
                 "type":"pNodeVarray"
             }
-        ]
+        ],
+        "exported":true
     },
     {
         "name":"getVpointer",
@@ -2305,6 +2445,7 @@
                 "name":"VvectorPtr",
                 "type":"pNodeVarray"
             }
-        ]
+        ],
+        "exported":true
     }
 ]

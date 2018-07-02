@@ -43,6 +43,19 @@ def generate_headers():
 
 @cli.command()
 def parse_headers():
+    for root, _, files in os.walk(os.path.join(current_directory, "../../OpenDSSDirect.make/_source/electricdss/DDLL/")):
+        for filename in files:
+            if filename.endswith(".lpr"):
+
+                with open(os.path.join(root, filename)) as f:
+                    data = f.read()
+
+                if "exports" in data:
+                    exports = data.split("exports")[1].split(";")[0]
+
+    exports = "\n".join([l.strip() for l in exports.splitlines() if not l.strip().startswith("//")])
+
+    exports = [e.strip().lower() for e in exports.replace("\n", "").split(",")]
 
     with open(os.path.join(current_directory, "../opendssdirect.pas")) as f:
         data = f.read()
@@ -52,6 +65,11 @@ def parse_headers():
 
         # get function name
         function_name = l.split("(")[0].strip("function ").replace("cdecl", "").replace(";", "").strip()
+
+        if function_name.lower() in exports:
+            export_status = True
+        else:
+            export_status = False
 
         # get output type
         if "(" not in l and ")" not in l:
@@ -79,7 +97,8 @@ def parse_headers():
         function_definition = {
             "name": function_name,
             "output": {"type": output_type},
-            "input": arguments
+            "input": arguments,
+            "exported": export_status
         }
 
         opendss_functions.append(function_definition)
@@ -108,6 +127,9 @@ def generate_c_headers():
 
     c_headers = []
     for f in data:
+
+        if f["exported"] is False:
+            continue
 
         c_header = ""
         c_header = c_header + f["output"]["type"].upper()
