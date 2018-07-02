@@ -1,8 +1,17 @@
 import os
 import json
+import click
 
 current_directory = os.path.realpath(os.path.dirname(__file__))
 
+
+@click.group()
+@click.version_option("0.1.0", '--version')
+def cli():
+    pass
+
+
+@cli.command()
 def generate_headers():
 
     path_to_folder = os.path.abspath(os.path.join(current_directory, "./../../OpenDSSDirect.make/_source/electricdss/DDLL/"))
@@ -31,6 +40,8 @@ def generate_headers():
     with open(os.path.abspath(os.path.join(current_directory, "./../opendssdirect.pas")), "w") as f:
         f.write("\n".join(func_sigs))
 
+
+@cli.command()
 def parse_headers():
 
     with open(os.path.join(current_directory, "../opendssdirect.pas")) as f:
@@ -76,6 +87,8 @@ def parse_headers():
     with open(os.path.join(current_directory, "../opendssdirect.json"), "w") as f:
         f.write(json.dumps(opendss_functions, indent=4, separators={",": "", ":": ""}))
 
+
+@cli.command()
 def generate_c_headers():
 
     typedefs = {"DOUBLE": "double",
@@ -119,4 +132,5 @@ def generate_c_headers():
 
 
 if __name__ == "__main__":
-    generate_c_headers()
+
+    cli()
